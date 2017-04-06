@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+     
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="@drawable/top_kaung"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/black13Text"
+            android:textColor="@color/new_black_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="@string/rewardpacket_money"/>
+
+        <TextView
+            android:id="@+id/tv_rewardpacket_money"
+            style="@style/red13Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/load" />
+    </RelativeLayout>
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:background="@drawable/middle_kuang"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/black13Text"
+            android:textColor="@color/new_black_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+             android:text="@string/rewardpacket_gqtime"/>
+
+        <TextView
+            android:id="@+id/tv_rewardpacket_gqtime"
+            style="@style/black13Text"
+            android:textColor="@color/new_black_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/load" />
+    </RelativeLayout>
+    
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:background="@drawable/middle_kuang"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/black13Text"
+            android:textColor="@color/new_black_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="@string/rewardpacket_zt"/>
+
+        <TextView
+            android:id="@+id/tv_rewardpacket_zt"
+             style="@style/black13Text"
+            android:textColor="@color/new_black_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/load" />
+    </RelativeLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/back"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  
+        <include layout="@layout/page_head"/>
+   
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"        
+        android:background="@drawable/text_pay_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/phone"
+            android:textColor="@color/new_black_color" />
+
+        <EditText
+            android:id="@+id/ed_newphonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/black16Text"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:maxLength="11"
+            android:background="@color/white"
+            android:hint="@string/updatenewphone"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+    </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layy" 
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <Button 
+                    android:id="@+id/yzm"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="100dp" 
+                    android:layout_height="wrap_content" 
+                    android:background="@drawable/button_p_back6"
+                    android:text="@string/hq"
+                    android:padding="5dp"
+                    style="@style/white16Text"/>
+
+                <EditText
+                    android:id="@+id/ed_newnumber"
+                    style="@style/black16Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/yzm"
+                    android:ems="11"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/yzm"
+                    android:inputType="number"
+                    android:padding="10dp" />
+                
+            </RelativeLayout>
+            
+    <Button
+        android:id="@+id/btn_suree"
+        style="@style/white18Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/new_btn_shape"
+        android:text="@string/sure" />
+ 
+</LinearLayout>

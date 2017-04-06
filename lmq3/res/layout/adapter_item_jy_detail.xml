@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/back"
+    android:layout_marginTop="0.5dp"
+
+    >
+
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="0.5dp">
+
+        
+          <ImageView
+                 android:id="@+id/iv"
+                  android:layout_width="32.5dp"
+                  android:layout_height="32.5dp"
+                  android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                  android:background="@drawable/zhi"/>
+          <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/iv"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/type"
+                style="@style/black13Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/load" />
+            
+            <TextView
+                android:id="@+id/time"
+                style="@style/gray13Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type"
+                android:layout_marginTop="8dp"
+                android:text="@string/load" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/money"
+            style="@style/black18Text"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/load" />
+   </RelativeLayout>
+</LinearLayout>

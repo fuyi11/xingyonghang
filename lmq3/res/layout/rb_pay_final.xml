@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_pay_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/black16Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="手机验证码"
+            android:textColor="@color/new_black_color" />
+
+        <EditText
+            android:id="@+id/rb_phone_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:hint="请输入手机验证码"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+    </LinearLayout>
+    
+    
+    
+
+    
+
+    <Button
+        android:id="@+id/user_pay_btn"
+        style="@style/white16Text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/new_btn_shape"
+        android:text="确认充值" />
+
+</LinearLayout>

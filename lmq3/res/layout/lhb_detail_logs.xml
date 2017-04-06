@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <include layout="@layout/page_head"></include>
+
+
+
+    <LinearLayout
+
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/hk_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            style="@style/gray18Text"
+            android:background="@drawable/segment_one_hit"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="@string/invest_lhb_hkxm"
+
+            />
+
+
+
+        <Button
+            android:id="@+id/jq_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/red"
+            android:background="@drawable/segment_three"
+            style="@style/gray18Text"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="@string/invest_lhb_jqxm"
+
+            />
+
+    </LinearLayout>
+
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:visibility="gone"
+        android:background="@color/back"/>
+
+
+
+<include layout="@layout/lhb_detail_log_title1" android:id="@+id/lhb_detaul_log_title1"></include>
+<include layout="@layout/lhb_detail_log_title2" android:id="@+id/lhb_detaul_log_title2"></include>
+
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/back"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        ptr:ptrHeaderTextColor = "@color/black"
+
+        android:id="@+id/lhb_detail_logs_list"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none" >
+
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+</LinearLayout>

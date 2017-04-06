@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdd_main_back" >
+
+    <include
+        android:id="@+id/card_title"
+        layout="@layout/base_title" />
+
+
+	<ListView	 
+		android:id="@+id/card_list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="none"
+        android:fadingEdge="none"
+		android:layout_below="@id/card_title"/>
+           
+
+</RelativeLayout>

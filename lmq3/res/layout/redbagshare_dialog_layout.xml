@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/layout_layer"
+    >
+
+
+   <include layout="@layout/dialog_head"></include>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/black13Text"
+            android:gravity="center"
+            android:text="亲们，这是我给你们的红包，快来领取吧!"
+            />
+        <TextView
+            android:id="@+id/url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/red13Text"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/load"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

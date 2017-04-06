@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/back"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/page_head" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/white20Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/peo_info2" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@android:drawable/editbox_background"
+        android:orientation="vertical" >
+      
+            <LinearLayout
+                android:layout_width="fill_parent" android:layout_marginLeft="20dip" 
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"  >
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peo_info_money_1" />
+
+                <TextView
+                    android:id="@+id/zcze"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xian3655" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dip" 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" >
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peo_info_money_2" />
+
+                <TextView
+                    android:id="@+id/kyye"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="普通会员" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dip" 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" >
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peo_info_money_3" />
+
+                <TextView
+                    android:id="@+id/djze"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="900000元" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dip" 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" >
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peo_info_money_4" />
+
+                <TextView
+                    android:id="@+id/dsze"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9900000元" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dip" 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" >
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peo_info_money_5" />
+
+                <TextView
+                    android:id="@+id/dslx"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2019年8月4日" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dip" 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" >
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peo_info_money_6" />
+
+                <TextView
+                    android:id="@+id/txze"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xian3655" />
+            </LinearLayout>
+            
+            
+            <View
+                android:layout_marginTop="10dip" 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" >
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peo_info_money_7" />
+
+                <TextView
+                    android:id="@+id/czze"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xian3655" />
+            </LinearLayout>
+            
+            
+            <View
+                android:layout_marginTop="10dip" 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" >
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peo_info_money_9" />
+
+                <TextView
+                    android:id="@+id/dhje"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xian3655" />
+            </LinearLayout>
+            
+            <View
+                android:layout_marginTop="10dip" 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" >
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peo_info_money_10" />
+
+                <TextView
+                    android:id="@+id/dhsj"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xian3655" />
+            </LinearLayout>
+            
+            <View
+                android:layout_marginTop="10dip" 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" >
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peo_info_money_11" />
+
+                <TextView
+                    android:id="@+id/dsje"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xian3655" />
+            </LinearLayout>
+            
+             <View
+                android:layout_marginTop="10dip" 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" >
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peo_info_money_12" />
+
+                <TextView
+                    android:id="@+id/dssj"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xian3655" />
+            </LinearLayout>
+ 
+        </LinearLayout> 
+
+</LinearLayout>

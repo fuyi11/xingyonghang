@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@color/white">
+        
+        <ImageView 
+            android:id="@+id/bank_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" />
+        
+        <LinearLayout
+            android:layout_toRightOf="@id/bank_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/tv_bank_name" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银行读取中"
+                android:background="@null"
+                style="@style/black18Text"/>
+            
+            <TextView
+                android:id="@+id/tv_bank_num" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尾号读取中"
+                style="@style/black13Text"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/p_jt"/>
+        
+    </RelativeLayout>
+
+
+    
+
+    
+</LinearLayout>

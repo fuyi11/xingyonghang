@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--  <item android:maxLevel="1"  android:drawable="@drawable/bank_01" />
+    <item android:maxLevel="2"  android:drawable="@drawable/bank_02" />
+    <item android:maxLevel="3" android:drawable="@drawable/bank_03" />
+    <item android:maxLevel="4" android:drawable="@drawable/bank_04" />
+    <item android:maxLevel="5"  android:drawable="@drawable/bank_05" />
+    <item android:maxLevel="6" android:drawable="@drawable/bank_06" />
+    <item android:maxLevel="7" android:drawable="@drawable/bank_07" />
+    <item android:maxLevel="8" android:drawable="@drawable/bank_08" />
+    <item android:maxLevel="9" android:drawable="@drawable/bank_09" />
+    <item android:maxLevel="10" android:drawable="@drawable/bank_10" />
+    <item android:maxLevel="11" android:drawable="@drawable/bank_11" />
+    <item android:maxLevel="12" android:drawable="@drawable/bank_12" />
+    <item android:maxLevel="13" android:drawable="@drawable/bank_13" />
+    <item android:maxLevel="14" android:drawable="@drawable/bank_14" />
+    <item android:maxLevel="15" android:drawable="@drawable/bank_15" />
+    <item android:maxLevel="16" android:drawable="@drawable/bank_16" />
+    <item android:maxLevel="17" android:drawable="@drawable/bank_17" />
+    <item android:maxLevel="18" android:drawable="@drawable/bank_18" />-->
+</level-list>

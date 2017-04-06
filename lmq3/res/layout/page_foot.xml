@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <!-- 之前版本   按钮背景图标   android:background="@drawable/button_b_foot_back" -->
+
+        <RadioButton
+            android:id="@+id/button1"
+            style="@style/black10Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/b_foot_back_9"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/button_b_page_1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/tz_page1" />
+
+        <RadioButton
+            android:id="@+id/button2"
+            style="@style/black10Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/b_foot_back_9"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/button_b_page_3"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/tz_page3" />
+
+        <RadioButton
+            android:id="@+id/button3"
+            style="@style/black10Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/b_foot_back_9"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/button_b_page_2"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/tz_page2" />
+
+        <RadioButton
+            android:id="@+id/button4"
+            style="@style/black10Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/b_foot_back_9"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/button_b_page_4"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/tz_page4" />
+    </RadioGroup>
+
+</LinearLayout>

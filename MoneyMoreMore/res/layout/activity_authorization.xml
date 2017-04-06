@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdd_main_back" >
+
+    <include
+        android:id="@+id/authorization_title"
+        layout="@layout/base_title" />
+
+    <ScrollView
+        android:id="@+id/account_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authorization_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/auth_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/platform_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:gravity="center_vertical"
+                android:background="@drawable/title_back"
+                android:orientation="horizontal" 
+                android:layout_marginTop="10dip">
+
+                <TextView
+                    android:id="@+id/plat_account_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_mdd_name"
+                    android:textColor="@color/recharge_text"
+                    android:textSize="15sp" 
+                    android:layout_marginLeft="10dip"/>
+
+                <TextView
+                    android:id="@+id/plat_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mdd_name"
+                    android:textColor="@color/recharge_text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/auth_status_layout"
+                layout="@layout/item_auth" />
+
+            <include
+                android:id="@+id/open_layout"
+                android:layout_marginTop="20dip"
+                layout="@layout/item_auth" />
+
+            <include
+                android:id="@+id/close_layout"
+                android:layout_marginTop="20dip"
+                layout="@layout/item_auth" />
+
+            <TextView
+                android:id="@+id/statement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="您开启授权后，乾多多默认您已同意自己承担账户的风险，在适用法律允许的最大范围内，乾多多在任何情况下不就因授权所发生的特殊的、意外的、非直接或间接的损失承担赔偿责任。"
+                android:textColor="@color/recharge_text" 
+                android:layout_marginBottom="20dip"/>
+
+            <include
+                android:id="@+id/password"
+                layout="@layout/item_register" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                style="@style/EnterBtnTheme"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="20dip"
+                android:text="@string/authorization_submit"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 项目名称 -->
+    <string name="app_name">融医网</string>
+    <!-- 公司电话 -->
+    <string name="about_info3">400-125-56890</string>
+    <!-- 微信帐号 -->
+    <string name="company_weichat_str">融医网</string>
+    <!-- 数据地址 -->
+    <string name="server_ip">http://rongyiwang.lvmaque.net</string>
+    <!-- 软件配置参数 -->
+    <string name="public_key">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbjaf5T8w/Iem6r6XjBqD/zaFiOl/7wlPBuS+Plr+KjiXCqfOEbQS6ajWGpTwJjjAg2ofcNrJCAqSWz1B3Pq2eSRen8QHJOZauT0ook5qhgqQrOCC4nfxqXjxeusbOtZAHilGZ/sqAmCGSMmqmA9dJcsFhYUdyI6MHUtk2nqCVgQIDAQAB</string>
+    <string name="private_key">MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAJuNp/lPzD8h6bqvpeMGoP/NoWI6X/vCU8G5L4+Wv4qOJcKp84RtBLpqNYalPAmOMCDah9w2skICpJbPUHc+rZ5JF6fxAck5lq5PSiiTmqGCpCs4ILid/GpePF66xs61kAeKUZn+yoCYIZIyaqYD10lywWFhR3IjowdS2TaeoJWBAgMBAAECgYEAmlXyU2rZO8pqHNApxxbMpwFfHhbNJP2qHIugpNbtNIvU60+0Ta/dARhgAzfuWYy6M96e7d9W/iehJgCL1cRafRzM5rF2U0zZQqNjSZImGr9osUWeX3Qu5+0Nb7a7LdqzAAgl7hynWfM4JtmcrJGTUVpev7LipJ2fIiZoBNbK+AECQQD3lBfeUEumDAFrbLwUM98v7PWPWWguziuMxFADicAOqvTCpD2kNwQksO3YDb6rtokwgFIvDYeCGysK6zkUKnzPAkEAoNg13+7zvLBo3y4g8t4D8G80+RhNVm5i/dt4xzIUG+5Ke+/rNbRHbtVTpzMNdhzVfwqIElfO6dS2NkB3Pw98rwJAbqA52hi+9L9AkyPPFqfm/p8/SoKEzwVI6Gl/51TSALvbCm4hLRN4QnzcikH6BPhXbNip4GSHPFevb/2TT7N8eQJAOXgHB9Pg0nJVhih9LUmWLroNO1Mrjs4yIHHiXYnPFYu2oUG/0JhxTXB7Syo6jREQVyv0IlmtXG7cC9ZMxQNLkQJAW1buJ3Ne/r1ujtwyHthAKSNirM1Tr0uGJ+KFlymfMe/sB/zyza8YWn7WFlXzRzgNXV3h7s91pCMkCXVo16HQgg==</string>
+
+    <string-array name="bank_name">
+        <item>工商银行</item>
+        <item>农业银行</item>
+        <item>中国银行</item>
+        <item>建设银行</item>
+        <item>邮政银行</item>
+        <item>中信银行</item>
+        <item>光大银行</item>
+        <item>民生银行</item>
+        <item>平安银行</item>
+        <item>兴业银行</item>
+    </string-array>
+    <string-array name="bank_id">
+        <item>ICBC</item>
+        <item>ABC</item>
+        <item>BOC</item>
+        <item>CCB</item>
+        <item>POST</item>
+        <item>CITIC</item>
+        <item>CEB</item>
+        <item>CMBC</item>
+        <item>PINGAN</item>
+        <item>CIB</item>
+    </string-array>
+
+
+
+    <string-array name="invest_type">
+        <item>全部</item>
+        <item>企业直投</item>
+        <item>募捐</item>
+        <item>债券转让</item>
+
+    </string-array>
+    <string-array name="debet_type">
+        <item>可转让债权</item>
+        <item>转让中债权</item>
+        <item>已转让债权</item>
+        <item>已认购债权</item>
+    </string-array>
+    <string-array name="debet_main_type">
+        <item>全部类型</item>
+        <item>企业直投</item>
+
+    </string-array>
+    <string-array name="tz_type">
+        <item>全部</item>
+        <item>直接投资</item>
+        <item>认购债券</item>
+    </string-array>
+<string-array name="hk_type">
+        <item>竞标中</item>
+        <item>还款中</item>
+        <item>已完成</item>
+        <item>已转让</item>
+    </string-array>
+
+    <string-array name="debet_tips1">
+        <item>利率</item>
+        <item>待收本金/利息</item>
+        <item>投资时间</item>
+        <item>到期时间</item>
+    </string-array>
+
+    <string-array name="debet_tips2">
+        <item>利率</item>
+        <item>未还/总期数</item>
+        <item>转让本金</item>
+        <item>转让时间</item>
+    </string-array>
+
+    <string-array name="debet_tips3">
+        <item>利率</item>
+        <item>购买期数/总期数</item>
+        <item>转让本金</item>
+        <item>转让时间</item>
+    </string-array>
+
+    <string-array name="debet_tips4">
+        <item>利率</item>
+        <item>转让期数/总期数</item>
+        <item>债权总值</item>
+        <item>购买价格</item>
+    </string-array>
+
+    <string-array name="jkyt">
+        <item>短期周转</item>
+        <item>生意周转</item>
+        <item>生活周转</item>
+        <item>购物消费</item>
+        <item>旅游借款</item>
+        <item>创业借款</item>
+        <item>其他借款</item>
+    </string-array>
+
+    <string-array name="jkqx">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+        <item>13月</item>
+        <item>14月</item>
+        <item>15月</item>
+        <item>16月</item>
+        <item>17月</item>
+        <item>18月</item>
+        <item>19月</item>
+        <item>20月</item>
+        <item>21月</item>
+        <item>22月</item>
+        <item>23月</item>
+        <item>24月</item>
+        <item>25月</item>
+        <item>26月</item>
+        <item>27月</item>
+        <item>28月</item>
+        <item>29月</item>
+        <item>30月</item>
+        <item>31月</item>
+        <item>32月</item>
+        <item>33月</item>
+        <item>34月</item>
+        <item>35月</item>
+        <item>36月</item>
+
+
+    </string-array>
+
+    <string-array name="minitz">
+        <item>50元</item>
+        <item>100元</item>
+        <item>200元</item>
+        <item>300元</item>
+        <item>500元</item>
+        <item>1000元</item>
+        <item>2000元</item>
+        <item>3000元</item>
+        <item>4000元</item>
+        <item>5000元</item>
+
+    </string-array>
+
+    <string-array name="maxtz">
+        <item>没有限制</item>
+        <item>1500元</item>
+        <item>2000元</item>
+        <item>3000元</item>
+        <item>4000元</item>
+        <item>5000元</item>
+        <item>6000元</item>
+        <item>10000元</item>
+
+    </string-array>
+
+    <string-array name="yxsj">
+        <item>1天</item>
+        <item>2天</item>
+        <item>3天</item>
+        <item>4天</item>
+        <item>5天</item>
+        <item>6天</item>
+        <item>7天</item>
+
+
+    </string-array>
+
+    <string-array name="htjkqx">
+        <item>1天</item>
+        <item>2天</item>
+        <item>3天</item>
+        <item>4天</item>
+        <item>5天</item>
+        <item>6天</item>
+        <item>7天</item>
+        <item>8天</item>
+        <item>9天</item>
+        <item>10天</item>
+        <item>11天</item>
+        <item>12天</item>
+        <item>13天</item>
+        <item>14天</item>
+        <item>15天</item>
+        <item>16天</item>
+        <item>17天</item>
+        <item>18天</item>
+        <item>19天</item>
+        <item>20天</item>
+        <item>21天</item>
+        <item>22天</item>
+        <item>23天</item>
+        <item>24天</item>
+        <item>25天</item>
+        <item>26天</item>
+        <item>27天</item>
+        <item>28天</item>
+        <item>29天</item>
+        <item>30天</item>
+
+
+
+    </string-array>
+
+
+    <string-array name="hkfs">
+        <item>按天到期还款</item>
+        <item>等额本息</item>
+        <item>每月还息到期还本</item>
+        <item>一次性还款</item>
+
+
+    </string-array>
+
+    <string-array name="auto_tender">
+
+        <item>企业直投</item>
+
+
+
+    </string-array>
+
+    <string-array name="jllx">
+        <item>按投标金额比例奖励</item>
+
+    </string-array>
+
+
+    <string-array name="borrow_type">
+        <item>金额</item>
+        <item>利率</item>
+        <item>期限</item>
+        <item>时间</item>
+    </string-array>
+
+    <string-array name="borrow_type2">
+        <item>借款/已还</item>
+        <item>利率</item>
+        <item>期限</item>
+        <item>即将还款</item>
+    </string-array>
+    <string-array name="borrow_type3">
+        <item>待还本金</item>
+        <item>待还利息</item>
+        <item>逾期罚金</item>
+        <item>催收费</item>
+    </string-array>
+    <string-array name="borrow_type4">
+        <item>金额</item>
+        <item>利息</item>
+        <item>期限</item>
+        <item>状态</item>
+    </string-array>
+    <string-array name="borrow_type5">
+        <item>金额</item>
+        <item>利率</item>
+        <item>期限</item>
+        <item>借款时间</item>
+    </string-array>
+
+
+
+
+
+</resources>

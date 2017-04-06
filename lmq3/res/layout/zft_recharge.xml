@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@drawable/button_p_kuang4"
+                android:padding="10dp" >
+                <TextView
+                    style="@style/black18Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/zft_kh"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/new_black_color" />
+
+                <TextView
+                    android:id="@+id/real_name"
+                    style="@style/gray16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/load"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/new_black_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black18Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/zft_jyje" />
+
+                <EditText
+                    android:id="@+id/ed_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.7"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:hint="请输入不小于1元的金额"
+                    android:padding="10dp"
+                    android:inputType="numberDecimal"
+                    style="@style/black16Text"
+                    android:background="@drawable/new_edt_shape" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/choice_bank_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@drawable/button_p_kuang4"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    style="@style/black18Text"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zft_yh"
+                    android:layout_marginLeft="60dp"
+                    android:textColor="@color/new_black_color" />
+
+                <TextView
+                    android:id="@+id/tv_bank_name"
+                    style="@style/black18Text"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="--请选择--" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black18Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginLeft="20dp"
+                    android:text="卡号" />
+
+                <EditText
+                    android:id="@+id/ed_cardnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:hint="请输入您的银行卡号"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    style="@style/black16Text"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/new_edt_shape" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/show_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@drawable/button_p_kuang4"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/yzm"
+                    style="@style/black18Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/zft_ylsjg" />
+
+                <TextView
+                    android:id="@+id/sendphonenum"
+                    style="@style/red13Text"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="获取验证码" />
+
+                <EditText
+                    android:id="@+id/user_phone"
+                    style="@style/black18Text"
+                    android:hint="请输入手机号"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/sendphonenum"
+                    android:layout_toRightOf="@id/yzm"
+                    android:inputType="phone"
+                    android:background="@drawable/new_edt_shape"
+                    android:maxLines="1" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/show_phone_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black18Text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/zft_ysjyzm" />
+
+                <EditText
+                    android:id="@+id/ed_vcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.2"
+                    style="@style/black18Text"
+                    android:maxLines="1"
+                    android:maxLength="8"
+                    android:hint="请输入手机获取的验证码"
+                    android:singleLine="true"
+                    android:background="@drawable/new_edt_shape" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_tijiao"
+                style="@style/white18Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/new_btn_shape"
+                android:padding="10dp"
+                android:text="@string/zft_qrcz" />
+
+            <TextView
+                style="@style/black13Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/zft_info" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

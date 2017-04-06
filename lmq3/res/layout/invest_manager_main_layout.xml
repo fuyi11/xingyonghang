@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/page_head"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        >
+
+        <com.lmq.view.DrawableCenterButton
+            android:id="@+id/manage_btn_1"
+            style="@style/black13Text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableRight="@drawable/title_arrow"
+            android:text="产品类型"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/back"/>
+
+
+
+        <com.lmq.view.DrawableCenterButton
+            android:id="@+id/manage_btn_2"
+            style="@style/black13Text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableRight="@drawable/title_arrow"
+            android:text="投资方式"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/back"/>
+
+        <com.lmq.view.DrawableCenterButton
+            android:id="@+id/manage_btn_3"
+            style="@style/black13Text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableRight="@drawable/title_arrow"
+            android:text="还款状态"
+            />
+
+
+    </LinearLayout>
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/back"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        ptr:ptrHeaderTextColor = "@color/black"
+        android:id="@+id/invest_manager_list"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none" >
+
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

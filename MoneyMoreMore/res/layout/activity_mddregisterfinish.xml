@@ -1,0 +1,258 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdd_main_back" >
+
+    <include
+        android:id="@+id/register_finish_title"
+        layout="@layout/base_title" />
+
+    <ScrollView
+        android:id="@+id/register_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_finish_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/register_relative_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/image_code_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/input" >
+
+                <EditText
+                    android:id="@+id/input_image_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="5dip"
+                    android:background="@null"
+                    android:hint="@string/input_image_code"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/code_image"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/no_photo"
+                    android:scaleType="fitXY"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/input_mobile_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="81dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/mobile_input_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/mdd_mobile_text"
+                        style="@style/mdd_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/mobile" />
+
+                    <EditText
+                        android:id="@+id/mdd_mobile_edit"
+                        style="@style/mdd_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/mdd_mobile_text"
+                        android:background="@null"
+                        android:hint="@string/hint_mdd_mobile"
+                        android:inputType="phone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/line"
+                    style="@style/item_line" />
+
+                <LinearLayout
+                    android:id="@+id/mdd_msg_code_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" >
+
+                    <EditText
+                        android:id="@+id/mdd_msgcode_edit"
+                        style="@style/mdd_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/hint_msg_code"
+                        android:inputType="number" />
+
+                    <LinearLayout
+                        android:id="@+id/mdd_send_msg_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/send_msgcode_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/mdd_selecter_leftbtn" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent" />
+
+                        <Button
+                            android:id="@+id/send_voice_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/mdd_selecter_rightbtn" />
+                    </LinearLayout>
+                    
+                    
+                    <com.money.more.view.TimeButton 
+                        android:id="@+id/time_button"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/enter_btn_sel"
+                        android:visibility="gone"/>
+                    
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emial_main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/email_side_layout"
+                    layout="@layout/item_side" />
+
+                <LinearLayout
+                    android:id="@+id/email_code_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="81dp"
+                    android:background="@drawable/bg_item_bottom"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/email_input_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:background="@null" >
+
+                        <TextView
+                            android:id="@+id/mdd_email_text"
+                            style="@style/mdd_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/email" />
+
+                        <EditText
+                            android:id="@+id/mdd_email_edit"
+                            style="@style/mdd_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/mdd_email_text"
+                            android:background="@null"
+                            android:hint="@string/hint_email"
+                            android:inputType="textEmailAddress" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/line_2"
+                        style="@style/item_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/email_inputcode_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:background="@null" >
+
+                        <EditText
+                            android:id="@+id/mdd_emailcode_layout"
+                            style="@style/mdd_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:background="@null"
+                            android:hint="@string/hint_email_code"
+                            android:inputType="phone" />
+
+                        <com.money.more.view.TimeButton
+                            android:id="@+id/send_emailcode_btn"
+                            android:layout_width="100dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:text="@string/send_email_code" 
+                            android:background="@drawable/imq_selecter_btn"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register_submit"
+                style="@style/EnterBtnTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:text="@string/register_submit" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:background="@color/mdd_main_back" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

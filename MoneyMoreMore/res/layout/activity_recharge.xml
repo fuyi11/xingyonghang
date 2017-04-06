@@ -1,0 +1,255 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdd_main_back" >
+
+    <include
+        android:id="@+id/recharge_title"
+        layout="@layout/base_title" />
+
+    <ScrollView
+        android:id="@+id/test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recharge_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/recharge_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/toast_Layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/item_main108" >
+
+                <TextView
+                    android:id="@+id/tv_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/look_userinfo"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/expandeimg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/imq_right" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/user_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="61dp"
+                android:background="@drawable/title_back"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/platform_info_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/account"
+                        style="@style/title_text_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/account_username" />
+
+                    <TextView
+                        android:id="@+id/account_username"
+                        style="@style/title_text_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="@string/account_username" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/line_1"
+                    style="@style/item_line" />
+
+                <LinearLayout
+                    android:id="@+id/mdd_info_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/moneymoremore"
+                        style="@style/title_text_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/mdd_name" />
+
+                    <TextView
+                        android:id="@+id/moneymoremore_name"
+                        style="@style/title_text_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxEms="10"
+                        android:singleLine="true"
+                        android:text="@string/account_username" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mdd_user_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_main300"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/amount"
+                    layout="@layout/mdd_base_textitem" />
+
+                <TextView
+                    android:id="@+id/line_2"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/username"
+                    layout="@layout/mdd_base_textitem" />
+
+                <TextView
+                    android:id="@+id/line_3"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/idcard"
+                    layout="@layout/mdd_base_textitem" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mdd_card_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="81dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_main300"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/cardno_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:background="@null"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/card_no"
+                        style="@style/title_text_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="@string/amount"
+                        android:textColor="@color/question_choose" />
+
+                    <EditText
+                        android:id="@+id/cardno_edit"
+                        style="@style/recharge_edit_back"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_toRightOf="@id/card_no" />
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:src="@drawable/imq_item_expandable" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/line_4"
+                    style="@style/item_line" />
+
+                <LinearLayout
+                    android:id="@+id/bank_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:background="@null"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bank"
+                        style="@style/recharge_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:paddingLeft="10dip"
+                        android:text="@string/bank"
+                        android:textSize="15sp" />
+
+                    <Spinner
+                        android:id="@+id/bank_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mdd_mobile_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="81dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" 
+                android:background="@drawable/item_main300">
+
+                <include
+                    android:id="@+id/mobile"
+                    layout="@layout/mdd_base_edititem" />
+
+                <TextView
+                    android:id="@+id/line_5"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/message"
+                    layout="@layout/mdd_base_codeitem" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/recharge_submit"
+                style="@style/EnterBtnTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dip"
+                android:text="@string/recharge_submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<resources>
+	<drawable name="bg_main_item">@drawable/item_main300</drawable>
+</resources>

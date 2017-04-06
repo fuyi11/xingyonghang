@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+   
+        
+        <include layout="@layout/page_head"/>
+        
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/black20Text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_mycard" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dip"
+              android:layout_marginRight="10dip"
+              android:layout_marginTop="1dip"
+              android:padding="10dp"
+              android:background="@drawable/button_p_kuang4"
+              android:orientation="horizontal" >
+
+          <TextView
+            style="@style/black18Text"
+            android:textColor="@color/new_black_color" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/now_bank"
+             />
+          <!--  <EditText
+              android:id="@+id/ed_chosebank"
+              style="@style/gray13Text" 
+              android:paddingLeft="23dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#00000000"
+              android:hint="@string/kaihu_bank"
+              android:layout_gravity="center_vertical"
+               >
+          </EditText>-->
+
+          <Spinner
+              android:id="@+id/sp_chosebank_list"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:prompt="@string/sp_chosebank_title" />
+
+ </LinearLayout>
+          
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dip"
+              android:layout_marginRight="10dip"
+              android:layout_marginTop="1dip"
+              android:background="@drawable/button_p_kuang4"
+              android:padding="10dp"
+              android:orientation="horizontal" >
+
+          <TextView
+            style="@style/black18Text"
+            android:textColor="@color/new_black_color" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/now_kahao"
+             />
+          <EditText
+              android:id="@+id/ed_cardnumber"
+              style="@style/gray13Text"
+              android:paddingLeft="57dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#00000000"
+              android:hint="@string/bank_number"
+              android:layout_gravity="center_vertical"
+               >
+          </EditText>
+
+ </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dip"
+              android:layout_marginRight="10dip"
+              android:layout_marginTop="1dip"
+              android:background="@drawable/button_p_kuang4"
+              android:padding="10dp"
+              android:orientation="horizontal" >
+
+          <TextView
+            style="@style/black18Text"
+            android:textColor="@color/new_black_color" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/new_kahao"
+             />
+          <EditText
+              android:id="@+id/ed_newcardnumber"
+              style="@style/gray13Text"
+              android:paddingLeft="57dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#00000000"
+              android:hint="@string/new_number"
+              android:layout_gravity="center_vertical"
+               >
+          </EditText>
+
+ </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dip"
+              android:layout_marginRight="10dip"
+              android:layout_marginTop="1dip"
+              android:background="@drawable/button_p_kuang4"
+              android:padding="10dp"
+              android:orientation="horizontal" >
+
+          <TextView
+            style="@style/black18Text"
+            android:textColor="@color/new_black_color" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/sure_kahao"
+             />
+          <EditText
+              android:id="@+id/ed_surecardnumber"
+              style="@style/gray13Text"
+              android:paddingLeft="22dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#00000000"
+              android:hint="@string/repeat_number"
+              android:layout_gravity="center_vertical"
+               >
+          </EditText>
+
+ </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dip"
+              android:layout_marginRight="10dip"
+              android:layout_marginTop="1dip"
+              android:background="@drawable/button_p_kuang4"
+              android:padding="10dp"
+              android:orientation="horizontal" >
+
+          <TextView
+            style="@style/black18Text"
+            android:textColor="@color/new_black_color" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/privince"
+             />
+          <!--<EditText
+              android:id="@+id/ed_province"
+              style="@style/gray13Text" 
+              android:paddingLeft="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#00000000"
+              android:hint="@string/open_bankprivince"
+              android:layout_gravity="center_vertical"
+               >
+          </EditText>-->
+           <Spinner
+                android:id="@+id/province_spinner"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" >
+            </Spinner>
+
+ </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dip"
+              android:layout_marginRight="10dip"
+              android:layout_marginTop="1dip"
+              android:background="@drawable/button_p_kuang4"
+              android:padding="10dp"
+              android:orientation="horizontal" >
+
+          <TextView
+            style="@style/black18Text"
+            android:textColor="@color/new_black_color" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/city"
+             />
+          <!--  <EditText
+              android:id="@+id/ed_kaihucity"
+              style="@style/gray13Text"
+              android:paddingLeft="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#00000000"
+              android:hint="@string/older_bankcard"
+              android:layout_gravity="center_vertical"
+               >
+          </EditText>-->
+          <Spinner
+                android:id="@+id/city_spinner"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" >
+            </Spinner>
+
+ </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dip"
+              android:layout_marginRight="10dip"
+              android:layout_marginTop="1dip"
+               android:layout_marginBottom="1dip"
+              android:background="@drawable/button_p_kuang4"
+              android:padding="10dp"
+              android:orientation="horizontal" >
+
+          <TextView
+            style="@style/black18Text"
+            android:textColor="@color/new_black_color" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/kaihuzhihang"
+             />
+          <EditText
+              android:id="@+id/ed_oldbank"
+              style="@style/gray13Text" 
+              android:paddingLeft="35dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#00000000"
+              android:hint="@string/open_bankzhihang"
+              android:layout_gravity="center_vertical"
+               >
+          </EditText>
+
+     </LinearLayout>
+ 
+          <Button 
+            android:id="@+id/btn_tijiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/white18Text" 
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/new_btn_shape"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/update_yhk"/>
+          
+        </LinearLayout>
+    </ScrollView>
+       
+</LinearLayout>

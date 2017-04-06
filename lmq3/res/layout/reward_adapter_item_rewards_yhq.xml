@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+     
+      <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:layout_marginTop="0.5dp">
+
+          <LinearLayout
+              android:id="@+id/rl_status"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="5dp"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:gravity="center"
+              android:background="@drawable/uncoupon"
+              android:orientation="vertical" > 
+           
+            <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="horizontal" >
+           <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 style="@style/white10Text"
+                 android:layout_marginTop="3dp"
+                 android:text="￥" />
+            <TextView
+                android:id="@+id/tv_money"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 style="@style/white16Text"
+                 android:text="100" />
+            <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="元"
+                 style="@style/white10Text"
+                 android:layout_marginTop="3dp"
+                 android:layout_below="@id/tv_money" />
+             </LinearLayout>
+            <TextView
+                android:id="@+id/coupon_type"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="体验券"
+                 style="@style/white13Text"
+                 android:layout_marginTop="10dp"
+                 android:layout_below="@id/tv_money"
+                  />
+        </LinearLayout>
+        
+      <ImageView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rl_status"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/yhq_vertical_virgule" />
+          
+          
+            <LinearLayout
+                    android:id="@+id/index_lay2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/line" > 
+                    
+                 <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="每满" />
+                    <TextView
+                        android:id="@+id/invest_money"
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="100元" />
+                    <TextView
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="抵" />
+                    <TextView
+                        android:id="@+id/money"
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="5元" />
+
+                </LinearLayout>
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="2dp" 
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/type"
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="仅限于投资,债券转让不可以使用" />
+
+                </LinearLayout>
+             <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginTop="2dp" 
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/gray13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/rewardpacket_gqtime2" />
+
+                    <TextView
+                        android:id="@+id/tv_yhq_endtime"
+                        style="@style/gray13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/load"/>
+
+                </LinearLayout>
+          <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp" >
+
+                    <TextView
+                        style="@style/gray13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/rewardpacket_source2" />
+
+                    <TextView
+                        android:id="@+id/source"
+                        style="@style/gray13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/load"/>
+
+                </LinearLayout>
+          </LinearLayout>
+          
+     <ImageView
+         android:layout_marginBottom="0.5dp"
+        android:id="@+id/yhq_has_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@null" />   
+            
+            
+   </RelativeLayout>
+       
+
+</LinearLayout>

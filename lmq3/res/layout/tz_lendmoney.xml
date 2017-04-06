@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+    
+   <include layout="@layout/page_head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/item_show_kind"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/button_p_kuang4"
+                    android:padding="10dp"
+                    android:tag="6" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="标种介绍"
+                        android:textColor="@color/title_black"
+                        android:textSize="17sp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/more_item_selector" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/item_choice_kind"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_p_kuang4"
+                    android:padding="10dp"
+                    android:tag="6" >
+
+                    <Spinner
+                        android:id="@+id/pay_kind_list2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:entries="@array/pay_kind_list2"
+                        android:prompt="@string/pay_kind_title2" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/l_title"
+                    style="@style/gray18Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="@string/tz_biaoname"
+                    android:maxLength="40"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp" >
+                </EditText>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/l_amount"
+                    style="@style/gray18Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/flag_line"
+                    android:background="@color/white"
+                    android:hint="@string/tz_jiekuanmooney"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/flag_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/yuan"
+                    android:src="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/yuan"
+                    style="@style/red18Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="元" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/l_interest_rate"
+                    style="@style/gray18Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/flag_line2"
+                    android:background="@color/white"
+                    android:hint="@string/tz_nianlilv"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/flag_line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14dp"
+                    android:layout_toLeftOf="@+id/yuan1"
+                    android:src="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/yuan1"
+                    style="@style/red18Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:text="%" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <EditText
+                        android:id="@+id/borrow_time"
+                        style="@style/gray18Text"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/white"
+                        android:hint="@string/tz_item_3"
+                        android:inputType="number"
+                        android:singleLine="true" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/bttps"
+                        style="@style/red18Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/white"
+                        android:singleLine="true"
+                        android:text="一个月"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/flag_line3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/line" />
+
+                    <TextView
+                        android:id="@+id/borrow_time_uin_flag"
+                        style="@style/red18Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="月" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/change_time_kind_btn"
+                    style="@style/gray16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/tz_antian" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <Spinner
+                    android:id="@+id/pay_kind_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:entries="@array/pay_kind_list"
+                    android:paddingLeft="10dp"
+                    android:prompt="@string/pay_kind_title" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/direct_title_flag"
+                    style="@style/gray18Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/tz_dingxiang" />
+
+                <EditText
+                    android:id="@+id/direct_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/direct_flg"
+                    android:layout_toRightOf="@+id/direct_title_flag"
+                    android:hint="请输入定向标密码"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:visibility="gone" />
+
+                <ToggleButton
+                    android:id="@+id/direct_flg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/torggle_bg"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/red"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/gray18Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/js_3" />
+
+            <RadioGroup
+                android:id="@+id/reward_kind"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:checkedButton="@+id/b1"
+                android:orientation="vertical" >
+
+                <!-- 默认选中b1 -->
+
+                <RadioButton
+                    android:id="@+id/b1"
+                    style="@style/gray16Text"
+                    android:text="@string/tz_radio1" />
+
+                <RadioButton
+                    android:id="@+id/b2"
+                    style="@style/gray16Text"
+                    android:text="@string/tz_radio2" />
+
+                <RadioButton
+                    android:id="@+id/b3"
+                    style="@style/gray16Text"
+                    android:text="@string/tz_radio3"
+                    android:visibility="gone" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/gray18Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tz_tbsm" />
+
+            <EditText
+                android:id="@+id/other_tips"
+                style="@style/gray18Text"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/white"
+                android:inputType="textMultiLine"
+                android:maxLines="8"
+                android:gravity="left|top" />
+
+            <TextView
+                android:id="@+id/tv_tv"
+                style="@style/gray10Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/tz_zi" />
+
+            <Button
+                android:id="@+id/submit_lendmoney"
+                style="@style/white20Text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/new_btn_shape"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="确认并发布" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

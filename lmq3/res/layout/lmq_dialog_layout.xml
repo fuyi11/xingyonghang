@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#88323232"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical"
+        android:background="@drawable/layout_layer"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            style="@style/white20Text"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="您确定要取消债权吗？"
+            />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="支付密码："
+            android:gravity="right"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/dialog_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:hint="请输入支付密码"
+            android:background="@drawable/new_edt_shape"
+
+            />
+
+
+
+    </LinearLayout>
+    <include layout="@layout/dialog_head"></include>
+    </LinearLayout>
+</LinearLayout>

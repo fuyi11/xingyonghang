@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    
+    <LinearLayout 
+        android:id="@+id/item_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/top_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mdd_text"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|right"/>
+        
+        <EditText 
+            android:id="@+id/top_item_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/mdd_text"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"/>
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/line"
+        style="@style/item_line"/>
+    
+    <LinearLayout 
+        android:id="@+id/item_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        
+        <TextView 
+            android:id="@+id/bottom_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mdd_text"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|right"/>
+        
+        <EditText 
+            android:id="@+id/bottom_item_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/mdd_text"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:layout_marginRight="5dp"/>
+        
+    </LinearLayout>
+    
+    
+   
+</LinearLayout>

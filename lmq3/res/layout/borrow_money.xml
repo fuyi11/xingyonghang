@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+
+    <include layout="@layout/page_head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tz_item_1"
+                        android:textColor="@color/new_black_color" />
+
+                    <TextView
+                        android:id="@+id/yuan"
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="元"
+                        android:textColor="@color/new_black_color" />
+
+                    <EditText
+                        android:id="@+id/ed_money"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/tv_money"
+                        android:layout_toLeftOf="@id/yuan"
+                        android:inputType="numberDecimal"
+                        android:hint="请输入借款金额"
+                        android:background="@drawable/textview_bg"
+                        android:padding="10dp" >
+                    </EditText>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_nlv"
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/js_2"
+                        android:textColor="@color/new_black_color" />
+
+                    <TextView
+                        android:id="@+id/nlv"
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="%"
+                        android:textColor="@color/new_black_color" />
+
+                    <EditText
+                        android:id="@+id/ed_nlv"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@id/tv_nlv"
+                        android:layout_toLeftOf="@id/nlv"
+                        android:hint="请输入年利率"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/textview_bg"
+                        android:padding="10dp" >
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_jkyt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="13dp" >
+
+                    <TextView
+                        android:id="@+id/jkyt"
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/jkyt"
+                        android:textColor="@color/title_black" />
+
+                    <Button
+                        android:id="@+id/btn_jkyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/p_jt" />
+
+                    <TextView
+                        android:id="@+id/tv_jkyt"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/btn_jkyt"
+                        android:text="@string/load1"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_huankauntype"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="13dp" >
+
+                    <TextView
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/invest_manage_hklx"
+                        android:textColor="@color/title_black" />
+
+                    <Button
+                        android:id="@+id/btn_jkqx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/p_jt" />
+
+                    <TextView
+                        android:id="@+id/huankauntype"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/btn_jkqx"
+                        android:text="@string/load1"
+                         />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_little_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="13dp" >
+
+                    <TextView
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/little_money"
+                        android:textColor="@color/title_black" />
+
+                    <Button
+                        android:id="@+id/btn_little_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/p_jt" />
+
+                    <TextView
+                        android:id="@+id/tv_little_money"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/btn_little_money"
+                        android:text="@string/load1"
+                         />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_more_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="13dp" >
+
+                    <TextView
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/more_money"
+                        android:textColor="@color/title_black" />
+
+                    <Button
+                        android:id="@+id/btn_more_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/p_jt" />
+
+                    <TextView
+                        android:id="@+id/tv_more_money"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/btn_more_money"
+                        android:text="@string/load1"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_yx_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="13dp" >
+
+                    <TextView
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/yx_time"
+                        android:textColor="@color/title_black" />
+
+                    <Button
+                        android:id="@+id/btn_yx_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/p_jt" />
+
+                    <TextView
+                        android:id="@+id/tv_yx_time"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/btn_yx_time"
+                        android:text="@string/load1"
+                         />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_jkqx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="13dp" >
+
+                    <TextView
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/jkqx"
+                        android:textColor="@color/title_black" />
+
+                    <Button
+                        android:id="@+id/btn_invest_manage_hklx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/p_jt" />
+
+                    <TextView
+                        android:id="@+id/tv_jkqx"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/btn_invest_manage_hklx"
+                        android:text="@string/load1"
+                         />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_tbjl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="13dp" >
+
+                    <TextView
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/js_3"
+                        android:textColor="@color/title_black" />
+
+                    <Button
+                        android:id="@+id/btn_tbjl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/p_jt" />
+
+                    <TextView
+                        android:id="@+id/tbjl"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/btn_tbjl"
+                        android:text="否" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/redaw_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <View
+                        android:id="@+id/tbjl_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/black2" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_jllx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="13dp" >
+
+                        <TextView
+                            style="@style/black16Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/jllx"
+                            android:textColor="@color/title_black" />
+
+                        <Button
+                            android:id="@+id/btn_jllx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/p_jt" />
+
+                        <TextView
+                            android:id="@+id/tv_jllx"
+                            style="@style/black13Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@id/btn_jllx"
+                            android:text="按投标金额比例奖励" />
+                    </RelativeLayout>
+
+                    <View
+
+                        android:id="@+id/jllx_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/black2" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_tb_reward"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_tb_reward"
+                            style="@style/black16Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/js_3"
+                            android:textColor="@color/new_black_color" />
+
+                        <TextView
+                            android:id="@+id/bfh"
+                            style="@style/black16Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="%"
+                            android:textColor="@color/new_black_color" />
+
+                        <EditText
+                            android:id="@+id/ed_tb_reward"
+                            style="@style/black13Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@id/tv_tb_reward"
+                            android:layout_toLeftOf="@id/bfh"
+                            android:hint="请输入投标奖励"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/textview_bg"
+                            android:padding="10dp" >
+                        </EditText>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/black2" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_dxb"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="13dp" >
+
+                    <TextView
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/dxb"
+                        android:textColor="@color/title_black" />
+
+                    <Button
+                        android:id="@+id/btn_dxb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/p_jt" />
+
+                    <TextView
+                        android:id="@+id/tv_dxb"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/btn_dxb"
+                        android:text="否" />
+                </RelativeLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+                 <View
+                     android:id="@+id/dxb_view"
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"
+                     android:layout_marginLeft="20dp"
+                     android:background="@color/black2" />
+
+                 <RelativeLayout
+                     android:id="@+id/dx_view"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="10dp"
+                     android:padding="5dp" >
+
+                     <TextView
+                         style="@style/black16Text"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:text="@string/tz_item2_11"
+                         android:textColor="@color/new_black_color" />
+
+
+                     <EditText
+                         android:id="@+id/ed_dxb"
+                         style="@style/black13Text"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="10dp"
+                         android:layout_alignParentRight="true"
+                         android:hint="请输入定向标密码"
+                         android:background="@drawable/textview_bg"
+                         android:padding="10dp" >
+                     </EditText>
+                 </RelativeLayout>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"
+                     android:background="@color/black2" />
+             </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_tbxz"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="13dp" >
+
+                    <TextView
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tbxz"
+                        android:textColor="@color/title_black" />
+
+                    <Button
+                        android:id="@+id/btn_tbxz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/p_jt" />
+
+                    <TextView
+                        android:id="@+id/tv_tbxz"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/btn_tbxz"
+                        android:text="否" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/tbxz_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/black2" />
+
+               <LinearLayout
+                   android:id="@+id/xz_view"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="15dp"
+                       android:layout_marginRight="10dp"
+                       android:padding="5dp" >
+
+                       <TextView
+                           style="@style/black16Text"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:text="@string/tbxzje"
+                           android:textColor="@color/new_black_color" />
+
+
+                       <EditText
+                           android:id="@+id/ed_tbxzje"
+                           style="@style/black13Text"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:layout_marginLeft="10dp"
+                           android:layout_alignParentRight="true"
+                           android:hint="请输入投标限制金额"
+                           android:background="@drawable/textview_bg"
+                           android:padding="10dp" >
+                       </EditText>
+                   </RelativeLayout>
+
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="0.5dp"
+                       android:background="@color/black2" />
+               </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_borrow_name"
+                        style="@style/black16Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/borrow_name"
+                        android:textColor="@color/new_black_color" />
+
+                    <EditText
+                        android:id="@+id/ed_tv_borrow_name"
+                        style="@style/black16Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:hint="请输入借款的名称"
+                        android:padding="10dp"
+                        android:layout_toRightOf="@id/tv_borrow_name"
+                        android:background="@drawable/textview_bg">
+                    </EditText>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black2" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/gray18Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/borrow_introduce" />
+
+            <EditText
+                android:id="@+id/ed_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/new_edt_shape"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/submit_lendmoney"
+                style="@style/white20Text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/new_btn_shape"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="发布" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

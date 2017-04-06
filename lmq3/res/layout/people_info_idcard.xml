@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_big_normal_press"
+        android:orientation="vertical">
+    <RelativeLayout
+      android:id="@+id/head"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"  >
+        
+        <include layout="@layout/page_head"/>
+        
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/white20Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sfyz" />  
+    </RelativeLayout>
+    
+    <RelativeLayout
+            android:id="@+id/rl_bind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:padding="6dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/black20Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phonenumber" />
+
+            <TextView
+                android:id="@+id/tv_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textView2"
+                android:text="15806797858"
+                android:layout_centerVertical="true"
+                style="@style/black20Text" />
+            
+        </RelativeLayout>
+      <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:padding="5dp"
+         android:layout_marginLeft="5dp"
+         android:orientation="horizontal" >
+             
+            <EditText
+                android:id="@+id/yzm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="11"
+                android:drawableLeft="@drawable/b_page_4_2"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/yzm" />
+
+            <Button
+                android:id="@+id/btn_huoqu"
+                style="@style/white20Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/new_btn_shape"
+                android:text="@string/hq" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/idcard_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/b_page_4_2"
+            android:ems="11"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/idcard_number" />
+
+         <Button
+             android:id="@+id/btn_bck_login"
+             style="@style/white20Text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="40dp"
+             android:background="@drawable/p_back6_1"
+             android:text="@string/xyb" />
+
+    </LinearLayout>
+
+</LinearLayout>

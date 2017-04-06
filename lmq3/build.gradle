@@ -1,0 +1,73 @@
+apply plugin: 'android'
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile files('libs/sunjce_provider.jar')
+    compile project(':pickerview')
+//    compile files('libs/android-support-v4.jar')
+    compile files('libs/baofoo.jar')
+    compile files('libs/BaofooHelper.jar')
+    compile files('libs/BaofooPluginEx.jar')
+    compile files('libs/bcprov-jdk16-1.46.jar')
+    compile files('libs/commons-codec-1.9.jar')
+    compile files('libs/jpush-android-2.1.5.jar')
+    compile project(':MoneyMoreMore')
+}
+
+
+
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "22.0.1"
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['res', 'src']
+            resources.srcDirs = ['res', 'src']
+            aidl.srcDirs = ['res', 'src']
+            renderscript.srcDirs = ['res', 'src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs'] // <-- Set your folder here! }
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+    defaultConfig {
+        applicationId 'com.xyh'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            proguardFile 'proguard-project.txt'
+            minifyEnabled false
+        }
+        debug {
+            proguardFile 'proguard-project.txt'
+            minifyEnabled false
+        }
+    }
+    productFlavors {
+    }
+}

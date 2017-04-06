@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+
+
+        <include layout="@layout/page_head" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:padding="10dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@android:drawable/editbox_background"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    style="@style/black18Text"
+                    android:textColor="@color/new_black_color"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tx_uder" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/black16Text"
+                    android:textColor="@color/new_black_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/load" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                 android:padding="5dp" >
+
+                <TextView
+                    style="@style/black18Text"
+                    android:textColor="@color/new_black_color"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tx_yuer" />
+
+                <TextView
+                    android:id="@+id/tv_allmoney"
+                    style="@style/red16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/load" />
+                
+            </RelativeLayout>
+       </LinearLayout>
+       
+         <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:padding="20dp" >
+
+       <TextView
+          android:id="@+id/bank_name"
+          style="@style/black18Text"
+          android:textColor="@color/new_black_color"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:text="@string/load" />
+       <TextView
+          android:id="@+id/bank_num"
+          style="@style/gray16Text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          android:text="@string/load"/>
+    </RelativeLayout>
+        
+    <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dip"
+          android:layout_marginRight="10dip"
+          android:layout_marginTop="10dp"
+          android:background="@android:drawable/editbox_background"
+          android:orientation="vertical" >        
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+       <TextView 
+          style="@style/black18Text"
+          android:textColor="@color/new_black_color"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:text="@string/tx_tiqujine" />
+        <EditText
+            android:id="@+id/edit_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:hint="@string/tx_inputmoney"
+            android:background="@color/white"
+            android:inputType="numberSigned"
+            android:singleLine="true" />
+    </LinearLayout>
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"  
+            android:padding="10dp" >
+
+       <TextView 
+          style="@style/black18Text"
+          android:textColor="@color/new_black_color"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:text="@string/peo_info_safe_3" />
+        <EditText
+            android:id="@+id/edit_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:hint="@string/tx_zhifupsd"
+            android:background="@color/white"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:password="true"/>
+     </LinearLayout>
+   </LinearLayout>        
+        
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginLeft="10dip"
+         android:layout_marginRight="10dip"
+         android:padding="10dp" >
+       <TextView
+          android:id="@+id/tv_1"          
+          style="@style/gray16Text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:text="@string/tx_yuji" />
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/blue13Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_centerVertical="true"  
+            android:gravity="center"      
+            android:layout_toRightOf="@+id/tv_1"
+            android:layout_toLeftOf="@+id/tv_3"
+            android:text="@string/load" />
+        <TextView
+            android:id="@+id/tv_3"
+            style="@style/gray16Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/tx_daozhang" />
+        
+     </RelativeLayout>
+        <Button
+            android:id="@+id/btn_enter_money"
+            style="@style/white18Text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:background="@drawable/new_btn_shape"
+            android:text="@string/queding" />
+
+</LinearLayout>

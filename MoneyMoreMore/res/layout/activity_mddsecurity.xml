@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdd_main_back" >
+
+    <include
+        android:id="@+id/base_title"
+        layout="@layout/base_title" />
+
+    <ScrollView
+        android:id="@+id/account_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/base_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/transter_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/question_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/quest_one"
+                    layout="@layout/item_question" />
+                
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"/>
+
+                <include
+                    android:id="@+id/quest_two"
+                    layout="@layout/item_question" />
+                
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"/>
+
+                <include
+                    android:id="@+id/quest_three"
+                    layout="@layout/item_question" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit_btn"
+                style="@style/EnterBtnTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginTop="20dp"
+                android:text="@string/mdd_next" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

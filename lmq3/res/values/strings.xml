@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="about_info4"></string>
+    <string name="action_settings">Settings</string>
+    <string name="time">Hello world!</string>
+    <string name="tz_page1">首页</string>
+    <string name="tz_page2">我的账户</string>
+    <string name="tz_page3">投资</string>
+    <string name="tz_page4">更  多</string>
+    <string name="logininfo">点击此处登录</string>
+    <string name="progressbar">完成度:</string>
+    <string name="load">读取中</string>
+    <string name="load1">请选择</string>
+    <string name="submenu1">登录</string>
+    <string name="submenu2">更多</string>
+    <string name="submenu3">网贷社区</string>
+    <string name="tz_text_type">流转</string>
+    <string name="tz_text_info">zzxzx。</string>
+    <string name="tz_text_lilv">年利率</string>
+    <string name="tz_text_jine">金额</string>
+    <string name="tz_text_qixian">期限</string>
+    <string name="tz_text_jiangl">奖励</string>
+    <string name="tz_text_jiner">金额</string>
+    <string name="tz_text_lv">利率</string>
+    <string name="tz_text_tuijian">推荐</string>
+    <string name="tz_text_jindu">进度</string>
+    <string name="tz_text_gonggao">公告</string>
+    <string name="name">账户:</string>
+    <string name="nameinfo">用户名/邮箱</string>
+    <string name="passw">密&#160;&#160;&#160;&#160;码:</string>
+    <string name="passwinfo">密码</string>
+    <string name="login">登&#160;&#160;&#160;&#160;&#160;录</string>
+    <string name="ensure">确&#160;&#160;&#160;&#160;&#160;定</string>
+    <string name="exit_login">退出登录</string>
+    <string name="login_info1">记住密码</string>
+    <string name="login_info2">用户注册</string>
+    <string name="login_info3">找回密码</string>
+    <string name="touzi">我要投资</string>
+    <string name="register">用户注册</string>
+    <string name="register_0">账户</string>
+    <string name="register_1">邮箱</string>
+    <string name="register_2">密码</string>
+    <string name="register_3">确认</string>
+    <string name="register_4">建议使用4-20个字符</string>
+    <string name="register_5">6-16个字符，建议使用字母加数字的组合密码</string>
+    <string name="register_6">下一步</string>
+    <string name="register_name">输入用户名</string>
+    <string name="register_password">请输入密码</string>
+    <string name="register_password2">请再输入密码</string>
+    <string name="register_eml">输入邮箱地址</string>
+    <string name="peo_password_1">修改登陆密码</string>
+    <string name="peo_password_2">提交修改</string>
+    <string name="peo_password_1_1">旧密码</string>
+    <string name="peo_password_1_2">新密码</string>
+    <string name="peo_password_1_3">确认密码</string>
+    <string name="peo_password_1_3_1">&#160;&#160;&#160;&#160;验证码:</string>
+    <string name="peo_password_1_3_2">验证码:</string>
+    <string name="peo_password_1_4">完成注册</string>
+    <string name="deal_1">发生日期</string>
+    <string name="deal_2">类型</string>
+    <string name="deal_3">影响金额</string>
+    <string name="peo_info">个人资料</string>
+    <string name="peo_info_0">资金信息</string>
+    <string name="peo_data_1">账户详情</string>
+    <string name="peo_data_1_1">净资产:</string>
+    <string name="peo_data_1_2">账户总额:</string>
+    <string name="peo_data_1_3">可用余额:</string>
+    <string name="peo_data_1_4">冻结金额:</string>
+    <string name="peo_data_1_5">已赚利息:</string>
+    <string name="peo_data_1_6">净付利息:</string>
+    <string name="peo_data_1_7">已赚奖励:</string>
+    <string name="peo_data_2">待还详情</string>
+    <string name="peo_data_2_1">最近待还时间:</string>
+    <string name="peo_data_2_2">最近待还金额:</string>
+    <string name="peo_data_2_3">借款总额:</string>
+    <string name="peo_data_2_4">待还总额:</string>
+    <string name="peo_data_3">待收详情</string>
+    <string name="peo_data_3_1">最近待收时间:</string>
+    <string name="peo_data_3_2">最近待收金额:</string>
+    <string name="peo_data_3_3">待收总额:</string>
+    <string name="peo_data_3_4">待收利息:</string>
+    <string name="peo_level">会员等级:</string>
+    <string name="peo_vip_time">VIP期限:</string>
+    <string name="peo_real_name">真实姓名:</string>
+    <string name="peo_real_name_1">真实姓名</string>
+    <string name="peo_Line_of_credit">信用额度:</string>
+    <string name="peo_warranties">担保额度:</string>
+    <string name="peo_customer_service">您的客服:</string>
+    <string name="peo_tel">联系电话:</string>
+    <string name="peo_customer_service_tel">客服电话:</string>
+    <string name="peo_customer_service_qq">客服QQ:</string>
+    <string name="peo_withdrawal">提现账户</string>
+    <string name="peo_info2">账户信息</string>
+    <string name="peo_info3">奖金记录</string>
+    <string name="peo_info4">我要提现</string>
+    <string name="peo_info5">冻结总额:</string>
+    <string name="peo_info6">修改密码</string>
+    <string name="peo_info7">奖金记录</string>
+    <string name="peo_info8">登录账户</string>
+    <string name="peo_info9">可用余额:</string>
+    <string name="peo_info10">账户总额:</string>
+    <string name="peo_info11">待收总额:</string>
+    <string name="peo_info12">关于我们</string>
+    <string name="peo_info_safe_1">实名认证</string>
+    <string name="peo_info_safe_2">修改登录密码</string>
+    <string name="peo_info_safe_2_0">登录密码:</string>
+    <string name="peo_info_safe_2_2">确认密码:</string>
+    <string name="peo_info_safe_3">修改支付密码</string>
+    <string name="peo_info_safe_4">安全问题:</string>
+    <string name="peo_info_safe_5">手机号码</string>
+    <string name="peo_info_safe_6">电子邮箱</string>
+    <string name="peo_info_safe_7">安全退出</string>
+    <string name="peo_info_money_1">资产总额:</string>
+    <string name="peo_info_money_2">可用余额:</string>
+    <string name="peo_info_money_3">冻结总额:</string>
+    <string name="peo_info_money_3_1">冻结余额:</string>
+    <string name="peo_info_money_4_1">代收余额:</string>
+    <string name="peo_info_money_4">待收总额:</string>
+    <string name="peo_info_money_5">待收利息	:</string>
+    <string name="peo_info_money_6">提现总额:</string>
+    <string name="peo_info_money_7">充值总额:</string>
+    <string name="peo_info_money_8">充值总额:</string>
+    <string name="peo_info_money_9">最近待还金额:</string>
+    <string name="peo_info_money_10">最近待还时间:</string>
+    <string name="peo_info_money_11">最近待收金额:</string>
+    <string name="peo_info_money_12">最近待收时间:</string>
+    <string name="peo_info_investment_1">竞标中投资:</string>
+    <string name="peo_info_investment_2">回收中投资:</string>
+    <string name="peo_info_investment_3">收完的投资:</string>
+    <string name="peo_info_investment_4">逾期的投资:</string>
+    <string name="peo_info_investment_5">代偿网站:</string>
+    <string name="peo_info_investment_6">累计投资金额:</string>
+    <string name="peo_info_investment_7">代偿的投资:</string>
+    <string name="peo_info_borrowing_1">发标中借入:</string>
+    <string name="peo_info_borrowing_2">偿还中借入:</string>
+    <string name="peo_info_borrowing_3">还清的借入:</string>
+    <string name="peo_info_borrowing_4">逾期的借入:</string>
+    <string name="peo_info_borrowing_5">累计借入金额:</string>
+    <string name="peo_info_withdrawal_1">提款期限:</string>
+    <string name="peo_info_withdrawal_2">可提现金额:</string>
+    <string name="peo_info_withdrawal_3">提现金额:</string>
+    <string name="peo_info_withdrawal_4">提现金额</string>
+    <string name="peo_info_withdrawal_5">单笔提现金额限制为100-30000元</string>
+    <string name="peo_info_withdrawal_6">输入支付密码</string>
+    <string name="tx_dx_pass">输入定向标密码</string>
+    <string name="peo_info_withdrawal_7">72小时/24小时</string>
+    <string name="peo_info_withdrawal_8">确认提现</string>
+    <string name="peo_info_withdrawal_9">开户银行:</string>
+    <string name="peo_info_withdrawal_10">银行账号:</string>
+    <string name="peo_info_withdrawal_11">银行账号</string>
+    <string name="peo_info_bonus_1">发生日期</string>
+    <string name="peo_info_bonus_2">奖励金额</string>
+    <string name="tz_item_0">投标详情</string>
+    <string name="tz_item_1">借款金额</string>
+    <string name="tz_item_2">年化利率:</string>
+    <string name="tz_item_3">借款期限:</string>
+    <string name="tz_item_4">还款:</string>
+    <string name="tz_item_5">最小投标:</string>
+    <string name="tz_item_6">最大投标:</string>
+    <string name="tz_item_7">投标进度:</string>
+    <string name="tz_item_8">剩余时间:</string>
+    <string name="tz_item_10">借款综述</string>
+    <string name="tz_item_101">风险控制</string>
+    <string name="tz_item_9">购买</string>
+    <string name="tz_item_11">发布日期:</string>
+    <string name="tz_item_12">奖励:</string>
+    <string name="tz_item_13">投标次数:</string>
+    <string name="tz_item_14">还差:</string>
+    <string name="tz_item2_1">账户余额:</string>
+    <string name="tz_item2_2">起投金额</string>
+    <string name="tz_item2_3">最大投标:</string>
+    <string name="tz_item2_4">项目还差:</string>
+    <string name="tz_item2_4_1">可投金额:</string>
+    <string name="tz_item2_5">投标金额:</string>
+    <string name="tz_item2_6">支付密码:</string>
+    <string name="tz_item2_7">注意:点击确认表示您将投标金额并同意支付,同一用户对同一个标限投5次</string>
+    <string name="tz_item2_8">确认付款</string>
+    <string name="tz_item2_9">输入金额大于100元</string>
+    <string name="tz_item2_10">立即投标</string>
+    <string name="tz_item2_11">定向标密码</string>
+    <string name="tz_item2_12">请输入定向标密码</string>
+    <string name="tz_item3_1">流转周期:</string>
+    <string name="tz_item3_2">融资金额:</string>
+    <string name="tz_item3_6">剩余份数:</string>
+    <string name="tz_item3_7">已认购:</string>
+    <string name="tz_item3_10">每份金额:</string>
+    <string name="tz_item3_3">进度:</string>
+    <string name="tz_item3_2_1">可用余额:</string>
+    <string name="tz_item3_2_2">每份:</string>
+    <string name="tz_item3_2_3">最大投标:</string>
+    <string name="tz_item3_2_4">还差:</string>
+    <string name="tz_item3_2_5">奖励:</string>
+    <string name="tz_item3_2_6">支付密码:</string>
+    <string name="tz_item3_2_7">注意:点击确认表示您将投标金额并同意支付</string>
+    <string name="tz_item3_2_8">购买份数:</string>
+    <string name="tz_item3_2_9">认购期限:</string>
+    <string name="tz_item3_2_10">最小期限:</string>
+    <string name="tz_fen">份</string>
+    <string name="tz_yue">月</string>
+    <string name="erro_login1">请输入帐号或者密码</string>
+    <string name="erro_login2">帐号或者密码错误</string>
+    <string name="news"></string>
+    <!--    <string name="pull_to_refresh_pull_label">下拉可以刷新..</string>
+    <string name="pull_to_refresh_release_label">松手获取更多...</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">efresh_tap..</string>-->
+    <string name="about_info1">当前版本号:</string>
+    <string name="about_info2">适用于Android2.1及以上操作系统</string>
+    <string name="tzdetail">投标记录</string>
+    <string name="tzdetail_1">有效:</string>
+    <string name="tzdetail_2">投标人:</string>
+    <string name="newsTitle">平台公告</string>
+    <string name="more_0">更多</string>
+    <string name="more_1">分享给好友</string>
+    <string name="more_2">检查更新</string>
+    <string name="more_3">关于我们</string>
+    <string name="more_4">网贷社区</string>
+    <string name="help_0">帮助</string>
+    <string name="help_1_1">1.帮助</string>
+    <string name="help_1_2">帮助</string>
+    <string name="help_2_1">2.帮助</string>
+    <string name="help_2_2">帮助</string>
+    <string name="help_3_1">3.帮助</string>
+    <string name="help_3_2">帮助</string>
+    <string name="help_4_1">4.帮助</string>
+    <string name="help_4_2">帮助</string>
+    <string name="help_5_1">5.帮助</string>
+    <string name="help_5_2">帮助</string>
+    <string name="js">计算器</string>
+    <string name="js_1">投标金额</string>
+    <string name="js_2">年利率</string>
+    <string name="js_3">投标奖励</string>
+    <string name="js_4">管理费</string>
+    <string name="js_5">期限</string>
+    <string name="js_6">还款方式</string>
+    <string name="js_7">按天还款</string>
+    <string name="js_8">按月分期还款</string>
+    <string name="js_9">按月还息到期还本</string>
+    <string name="js_10">一次性还款</string>
+    <string name="js_11">年</string>
+    <string name="js_12">月</string>
+    <string name="js_13">日</string>
+    <string name="js_14">比例</string>
+    <string name="js_15">固定</string>
+    <string name="js_17">综合年利率</string>
+    <string name="js_18">综合月利率</string>
+    <string name="js_19">总收益:</string>
+    <string name="js_20">投标奖励:</string>
+    <string name="js_21">元</string>
+    <string name="js_22">利息收益:</string>
+    <string name="js_23">计        算</string>
+    <string name="js_24">奖励金额</string>
+    <string name="js_25">标总额</string>
+    <string name="js_25_0">总&#160;&#160;额:</string>
+    <string name="js_26">%</string>
+    <string name="version">已经是最新版本！</string>
+    <string name="toast1">链接超时，请稍候再试！</string>
+    <string name="toast2">正在玩命加载...</string>
+    <string name="toast3">数据上传成功</string>
+    <string name="toast4">上传失败,请重新上传</string>
+    <string name="toast5">注册成功！</string>
+    <string name="toast6">再按一次退出应用</string>
+    <string name="toast7">请输入旧密码</string>
+    <string name="toast8">请输入新密码</string>
+    <string name="toast8_0">请输入当前支付密码(尚未设置请输入登录密码)</string>
+    <string name="toast8_1">请重复输入新密码</string>
+    <string name="toast8_2">新密码不能少于6位</string>
+    <string name="toast8_3">新密码不能大于16位</string>
+    <string name="toast9">输入两次新密码不一样</string>
+    <string name="toast10">请输入要提现金额</string>
+    <string name="toast11">请输入提现密码</string>
+    <string name="toast12">请输入账号</string>
+    <string name="toast13">最少输入4个字符</string>
+    <string name="toast14">请输入密码</string>
+    <string name="toast15">最少输入6位密码</string>
+    <string name="toast16">最多输入16位密码</string>
+    <string name="toast16_0">请输入正确的银行卡号</string>
+    <string name="toast17">请输入邮箱地址</string>
+    <string name="toast18">请输入正确的邮箱地址</string>
+    <string name="toast19">两次输入的密码不一致</string>
+    <string name="toast20">您已经成功登录客户端</string>
+    <string name="feedback_title">意见反馈</string>
+    <string name="news_title">网站新闻</string>
+    <string name="notice_title">网站公告</string>
+    <string name="safe_title">安全中心</string>
+    <string name="userinfo_title">个人中心</string>
+    <string name="check_title">检测更新</string>
+    <string name="about">关于我们</string>
+    <string name="about_us">评价我们</string>
+    <string name="feed_back_tips">请写下您宝贵的建议或反馈</string>
+    <string name="submit_title">提 &#160;&#160;&#160;&#160;&#160;交</string>
+    <string name="submit_exit">退 &#160;&#160;&#160;&#160;&#160;出</string>
+    <string name="zh_jyjl">交易记录</string>
+    <string name="zh_tx">账户资料</string>
+    <string name="zh_yhk">银行卡</string>
+    <string name="zh_edsq">申请额度</string>
+    <string name="zh_jymm">修改支付密码</string>
+    <string name="zh_xgssmm">修改手势密码</string>
+    <string name="current_version">V&#160;1.1</string>
+    <string name="company_site">官方网站</string>
+    <string name="company_weichat">官方微信</string>
+    <string name="company_tel">客服电话</string>
+    <string name="chenck_new_version">版本检测</string>
+    <string name="feedback_tip_null">请输入您的宝贵意见</string>
+    <string name="feedback_tip_more">最多可输入60个字符</string>
+    <string name="feedback_tip_success">提交成功,感谢您对我们的支持.</string>
+    <string name="name2">姓名</string>
+    <string name="phone">手机号:</string>
+    <string name="next">下一步</string>
+    <string name="bindphone">绑定手机</string>
+    <string name="shimingrenz">实名认证</string>
+    <string name="chongzhiz">充值</string>
+    <string name="tixian">提现</string>
+    <string name="huiyuandengji">普通会员</string>
+    <string name="jingzichan">123.00</string>
+    <string name="myjiekuan">借款信息</string>
+    <string name="expand">我的优惠券</string>
+    <string name="invest_manager">投资管理</string>
+    <string name="reward_manager">奖励管理</string>
+    <string name="reward_lendmoney">借款管理</string>
+    <string name="invest_manager_debet">债权转让</string>
+    <string name="invest_lhb_sy">已赚取收益(元)</string>
+    <string name="invest_lhb_ztje">在投金额：</string>
+    <string name="invest_lhb_fcqx">封存期限：</string>
+    <string name="invest_lhb_nhsy">年化收益：</string>
+    <string name="invest_lhb_tzrq">投资日期：</string>
+    <string name="invest_lhb_qxrq">起息日期：</string>
+    <string name="invest_lhb_jqrq">结清日期：</string>
+    <string name="invest_lhb_hkfs">还款方式：</string>
+    <string name="invest_lhb_syfpfs">收益分配方式：</string>
+    <string name="invest_lhb_sylog">收益记录</string>
+    <string name="invest_lhb_shlog">赎回记录</string>
+    <string name="invest_lhb_shbtn">提前赎回</string>
+    <string name="invest_lhb_xy">投资协议</string>
+    <string name="invest_lhb_zcze">资产总额：</string>
+    <string name="invest_lhb_hkxm">收益记录</string>
+    <string name="invest_lhb_jqxm">赎回记录</string>
+    <string name="invest_lhb_huikuan">回款项目</string>
+    <string name="invest_lhb_jieqing">结清项目</string>
+    <string name="username">请输入用户名</string>
+    <string name="loginpsw">请输入登陆密码</string>
+    <string name="loginpsw2">请再次输入登陆密码</string>
+    <string name="tjr">请输入推荐人</string>
+    <string name="add">+&#160;&#160;&#160;&#160;添&#160;&#160;加</string>
+    <string name="btn_yzm">获取验证码</string>
+
+    <string name="peo_phone">修改手机号码</string>
+
+    <string name="newphone3">更改成功！</string>
+
+    <string name="yphone">新号码:</string>
+    <string name="newphone">请输入新手机号码</string>
+    <string name="newphone2">请输入验证码</string>
+
+
+    <string name="edsq_money">申请金额</string>
+    <string name="edsq">申请额度</string>
+    <string name="jkyt">借款用途</string>
+    <string name="jkqx">借款期限</string>
+    <string name="little_money">最低投标金额</string>
+    <string name="more_money">最多投标金额</string>
+    <string name="yx_time">有效时间</string>
+    <string name="jllx">奖励类型</string>
+    <string name="dxb">是否定向标</string>
+    <string name="tbxz">是否有投标限制</string>
+    <string name="borrow_name">借款名称</string>
+    <string name="borrow_introduce">借款说明</string>
+    <string name="tbxzje">投标限制金额</string>
+
+    <string name="lqsj">领取时间</string>
+    <string name="znx">站内信</string>
+
+
+    <string name="invest_lhb_xmbh">项目编号：</string>
+
+
+    <string name="invest_lhb_tzbj">投资本金</string>
+    <string name="invest_lhb_item_syze">收益总额</string>
+    <string name="invest_lhb_item_nhsy">年化收益</string>
+    <string name="invest_lhb_item_jqrq">结清日期</string>
+    <string name="invest_lhb_item_ljsy">累计收益</string>
+    <string name="invest_lhb_item_ysbx">已赎本息</string>
+
+
+    <string name="invest_manage_cplx">产品类型</string>
+    <string name="invest_manage_tzfs">投资方式</string>
+    <string name="invest_manage_hklx">还款方式</string>
+    <string name="invest_manage_tzsj">投资时间</string>
+    <string name="invest_manage_dqsj">到期时间</string>
+    <string name="invest_manage_ztje">在投金额</string>
+
+
+    <string name="lhb_main_title">灵活宝</string>
+    <string name="lhb_detail_title">详细信息</string>
+
+
+    <string name="lhb_detail_log_shsj">赎回时间</string>
+    <string name="lhb_detail_log_shje">赎回金额</string>
+    <string name="lhb_detail_log_status">状态</string>
+    <string name="lhb_detail_log_reek">备注</string>
+
+    <string name="lhb_detail_log_jxriq">结息日期</string>
+    <string name="lhb_detail_log_jsje">计算金额</string>
+    <string name="lhb_detail_log_bj">本金</string>
+    <string name="invest_manage_debet_bx">代收本金/利息</string>
+
+    <string name="reward_title">优惠券</string>
+    <string name="reward_redpackets">我的红包</string>
+    <string name="reward_jifen">积分奖励</string>
+    <string name="reward_invite">邀请奖励</string>
+    <string name="reward_coupon">我的优惠券</string>
+    <string name="rewardpacket_money">红包金额</string>
+    <string name="rewardpacket_money2">红包金额:</string>
+    <string name="rewardpacket_sctime">生成时间</string>
+    <string name="rewardpacket_gqtime">过期时间</string>
+    <string name="rewardpacket_gqtime2">过期时间:</string>
+    <string name="rewardpacket_lqtime">领取时间</string>
+    <string name="rewardpacket_source">来源</string>
+    <string name="rewardpacket_source2">来源:</string>
+    <string name="rewardpacket_zt">状态</string>
+    <string name="rewardpacket_ysc">已生成</string>
+    <string name="rewardpacket_yqd">已抢到</string>
+    <string name="rewardpacket_ygq">已过期</string>
+
+    <string name="reward_tzjf">投资积分</string>
+    <string name="rewardtzjf_ky">可用投资积分</string>
+    <string name="rewardtzjf_jfjl">积分记录</string>
+    <string name="rewardtzjf_jfdh">积分兑换</string>
+    <string name="rewardtzjf_ljhq">累计获取积分</string>
+    <string name="rewardtzjf_yytz">已用投资积分</string>
+    <string name="rewardtzjf_type">类型:</string>
+    <string name="rewardtzjf_time">时间:</string>
+    <string name="rewardtzjf_detail">详情:</string>
+    <string name="rewardtzjf_zt">状态:</string>
+    <string name="rewardtjl_time">奖励时间:</string>
+    <string name="rewardtjl_detail">获取详情:</string>
+    <string name="rewardtkl_status">使用状态:</string>
+
+    <string name="rewardyq_user">邀请用户</string>
+    <string name="rewardyq_usertime">注册时间</string>
+    <string name="rewardyq_jl">邀请奖励</string>
+    <string name="rewardyq_shengxiao">是否生效</string>
+    <string name="rewaryhq">我的优惠券</string>
+    <string name="rewaryhq_rewards_record">奖励记录</string>
+    <string name="rewaryhq_unused">未使用优惠券</string>
+    <string name="rewaryhq_ygq">已过期优惠券</string>
+    <string name="rewaryhq_unused_ze">未使用优惠券总额</string>
+    <string name="rewaryhq_use_ze">已使用优惠券总额</string>
+    <string name="yjsy">预计总收益</string>
+    <string name="xtje">限投金额</string>
+
+
+    <string name="invest_manager_lbh">灵活宝</string>
+    <string name="invest_manager_tzhl">投资管理</string>
+    <string name="invest_manager_zqzr">债权转让</string>
+    <string name="invest_manager_zdtb">自动投标</string>
+    <string name="newpassword">新密码:</string>
+    <string name="cz_password">重复密码</string>
+    <string name="wcheng">完&#160;&#160;&#160;&#160;&#160;成</string>
+    <string name="wbd">未绑定</string>
+    <string name="update_wbd">更改绑定银行卡</string>
+    <string name="toastphone">请输入手机号</string>
+    <string name="zq_price">转让价格</string>
+    <string name="zq_dsbx">待收本息</string>
+    <string name="zq_lv">收益率</string>
+    <string name="zq_qx">转让期限</string>
+    <string name="zq_all_moeny">债权总额&#160;&#160;:&#160;&#160;</string>
+    <string name="zq_buy_price">购买价格&#160;&#160;:&#160;&#160;</string>
+    <string name="zq_left_money">当前余额&#160;&#160;:&#160;&#160;</string>
+    <string name="zq_pwd">支付密码&#160;&#160;:&#160;&#160;</string>
+    <string name="toastyzm">请输入验证码</string>
+    <string name="tx_daozhang">到账</string>
+    <string name="bd_1">请输入银行</string>
+    <string name="bd_2">请输入卡号</string>
+    <string name="bd_2_0">请输入新卡号</string>
+    <string name="bd_2_1">请输入确认新卡号</string>
+    <string name="bd_2_2">请输入确认当前卡号</string>
+    <string name="bd_3">请输入开户所在的省</string>
+    <string name="bd_4">请输入开户所在的市</string>
+    <string name="bd_5">请输入开户支行</string>
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_retry_button_text">"重试"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"绘制解锁图案"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"请再次绘制解锁图案"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次输入不一致，请重试"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用。</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+    <string name="bdemail">绑定邮箱地址</string>
+    <string name="updatephone">绑定手机号码</string>
+    <string name="updatenewphone">请输入手机号码</string>
+    <string name="sure">确&#160;&#160;&#160;&#160;&#160;认</string>
+    <string name="queding">确&#160;&#160;&#160;&#160;定</string>
+    <string name="xiayibu">输入</string>
+    <string name="sfyz">身份验证</string>
+    <string name="phonenumber">手机号码:</string>
+    <string name="yzm">请输入验证码</string>
+    <string name="hq">获取验证码</string>
+    <string name="xyb">下一步</string>
+    <string name="fsyzm">成功发送验证码，请注意查收！</string>
+    <string name="yzok">成功验证手机号！</string>
+    <string name="dqmm">当前密码</string>
+    <string name="sure_psw">确认新密码</string>
+    <string name="idcard_number">身份证号码</string>
+    <string name="idcard_number_1">身份证号</string>
+    <string name="login_number">修改密码</string>
+    <string name="update_loginpsd">请确保登录密码与交易密码不同，提高账户安全保障</string>
+    <string name="screen_lock_creat">创建手势密码</string>
+    <string name="screen_lock_tips">设置手势密码</string>
+    <string name="bind_banckcard">绑定银行卡</string>
+    <string name="update_banckcard">更新银行卡</string>
+    <string name="info_banckcard">银行卡信息</string>
+    <string name="tijiao">提交</string>
+    <string name="bind_mycard">请绑定持卡人本人银行卡</string>
+    <string name="update_mycard">请更改持卡人本人银行卡</string>
+    <string name="chose_bank">银行</string>
+    <string name="now_bank">新银行名称</string>
+    <string name="chikaren">持卡人</string>
+    <string name="kahao">卡号</string>
+    <string name="now_kahao">原卡号</string>
+    <string name="new_kahao">新卡号</string>
+    <string name="sure_kahao">确认新卡号</string>
+    <string name="privince">开户所在省</string>
+    <string name="city">开户所在市</string>
+    <string name="kaihuzhihang">开户行</string>
+    <string name="old_card">旧银行卡</string>
+    <string name="kaihu_bank">请选择开户银行</string>
+    <string name="bank_number">请填写银行卡卡号</string>
+    <string name="repeat_number">请重複填写银新行卡卡号</string>
+    <string name="new_number">请填写新银行卡卡号</string>
+    <string name="open_bankprivince">请填写银行开卡所在的省份</string>
+    <string name="open_bankzhihang">请填写银行开卡所在的支行</string>
+    <string name="older_bankcard">请填写银行开卡所在的市</string>
+    <string name="shimingyanzheng">实名验证</string>
+    <string name="shiming">您的实名验证未通过，请重新填写</string>
+    <string name="failure">审核失败</string>
+    <string name="zhengjianshenhe">证件审核</string>
+    <string name="jinxingrz">进行认证</string>
+    <string name="real_name">请填写真实姓名</string>
+    <string name="real_idcard">请填写身份证号</string>
+    <string name="zm_idcard">身份证正面</string>
+    <string name="fm_idcard">身份证反面</string>
+    <string name="chosephoto">请点击此处选择图片</string>
+    <string name="tjush">提交审核</string>
+    <string name="bandding">绑定</string>
+    <string name="sw_bandding">尚未绑定</string>
+    <string name="bank">所在银行</string>
+    <string name="khyh_provinces">开户银行所在的省份</string>
+    <string name="khyh_city">开户银行所在的市</string>
+    <string name="khyh_zhihang">开户银行支行</string>
+    <string name="update_yhk">修改银行卡</string>
+    <string name="bind_yhk">绑定银行卡</string>
+    <string name="updatezfpsd_title">修改支付密码</string>
+    <string name="tx_uder">用户名:</string>
+    <string name="tx_yuer">账户余额</string>
+    <string name="gerenzhongxin_tixian">提现</string>
+    <string name="tx_tiqujine">提取金额</string>
+    <string name="tx_inputmoney">输入提取金额</string>
+    <string name="tx_zhifupsd">输入支付密码</string>
+    <string name="tx_yuji">预计</string>
+    <string name="modify_finger_password">修改手势密码</string>
+    <string name="tz_jiekuannumber">借款标号</string>
+    <string name="tz_item_yihuan">已借金额:</string>
+    <string name="tz_item_qixian">还款期限:</string>
+    <string name="tz_jingzhibiao">净值标</string>
+    <string name="tz_biaoname">请输入标名</string>
+    <string name="tz_jiekuanmooney">请输入借款金额</string>
+    <string name="tz_nianlilv">请输入年利率</string>
+    <string name="tz_antian">按天</string>
+    <string name="tz_dingxiang">是否定向标</string>
+    <string name="tz_radio1">不设置奖励</string>
+    <string name="tz_radio2">按投标金额比例奖励</string>
+    <string name="tz_radio3">按固定金额分摊奖励</string>
+    <string name="tz_tbsm">投标说明</string>
+    <string name="tz_zi">200字以内</string>
+    <string name="myborrow">我的借款名称</string>
+    <string name="myborrowdu">借款额度:</string>
+    <string name="record_lendmoney">借款记录</string>
+    <string name="lendmoney_title">我要借款</string>
+    <string name="toubiao_tv1">高收益</string>
+    <string name="toubiao_tv2">100%本息保障</string>
+    <string name="toubiao_tv3">购买金额</string>
+    <string name="toubiao_tv3_1">输入金额</string>
+    <string name="toubiao_tv4">输入期限</string>
+    <string name="toubiao_tv5">输入密码</string>
+    <string name="toubiao_tv6">立即投标</string>
+    <string name="yue">余额</string>
+    <string name="dongjie">冻结</string>
+    <string name="allmoney">总额</string>
+    <string name="othermoney">待收</string>
+    <string name="toubiao_name">塑料制品厂有限公司</string>
+    <string name="add_bankcard">添&#160;&#160;&#160;&#160;加</string>
+    <string name="update_bankcard">修&#160;&#160;改</string>
+    <string name="ok">确&#160;&#160;定</string>
+
+
+    <!-- 还款类型 -->
+
+    <string name="pay_kind_title">还款方式</string>
+    <string name="pay_kind_title2">选择标种</string>
+    <string name="tz_pay_kind1">按月还息</string>
+    <string name="tz_pay_kind2">利息复投</string>
+
+    <string-array name="pay_kind_list">
+        <item>按天到期还款</item>
+        <item>按月分期还款</item>
+        <item>按季分期还款</item>
+        <item>每月还息到期还本</item>
+        <item>一次性还款</item>
+        <item>利息复投</item>
+    </string-array>
+    <string-array name="pay_kind_list2">
+        <item>信用标</item>
+        <item>担保标</item>
+        <item>秒还标</item>
+        <item>净值标</item>
+        <item>抵押标</item>
+    </string-array>
+
+    <string name="title_intro_1">信用标介绍</string>
+    <string name="title_intro_2">机构担保标介绍</string>
+    <string name="title_intro_3">秒还标介绍</string>
+    <string name="title_intro_4">净值标介绍</string>
+    <string name="title_intro_5">抵押标介绍</string>
+    <string name="title_intro_6">企业直投标</string>
+    <string name="title_det_1">         信用借款标显示"信"字标记，是一种免抵押、
+        免担保、纯信用，的小额个人信用贷款标!</string>
+    <string name="title_det_2">         机构担保借款标显示标记"担"，是有担保机构进行担保的借款。</string>
+    <string name="title_det_3">         秒还标是一种娱乐庆祝送钱的标，可以很快提升发标者的积分，
+         把快乐送给大家。</string>
+    <string name="title_det_4">         净值借款标显示标记"净"，如果客户净资产大于借款金额，
+         网站运营方允许发布净值借款标用于临时周转。</string>
+    <string name="title_det_5">        抵押借款标显示标记"抵"，是网站运营方经过线下严格核查借款人资产负债！。</string>
+    <string name="title_det_6">         P2C借贷模式是在P2P网络借贷的基础上创新的一种新型模式更加稳定，
+         更加低风险的一种理财方式。p2c借贷模式是即投即开始计算收益投资者资金不会站岗。
+         P2C的借款人则以企业为主，
+         企业信息及企业运营相对固定，有稳定的现金流及还款来源，信息容易核实，
+         同时企业的违约成本远高于个人；P2P一般采用信用贷款形式，；而P2C则要求必须有担保、
+         有抵押，安全性相对更好。</string>
+    <string name="sumbit_post_title">发布借款</string>
+    <string name="zq_buy_btn_str">确定购买</string>
+    <string name="home_fragment">我要投资</string>
+    <string name="index_fragment">首&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;页</string>
+    <string name="lend_money_fragment">我要借款</string>
+    <string name="user_info_fragment">我的账户</string>
+    <string name="setting_fragment">更&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;多</string>
+    <string name="index_str1">平台介绍</string>
+    <string name="index_str2">绿麻雀平台</string>
+    <string name="index_str3">联系客服</string>
+    <string name="index_str4">400-003-9096</string>
+    <string name="index_str5">多种标型</string>
+    <string name="index_str6">灵活投资</string>
+    <string name="index_str7">多种投资标型&#160;&#160;不同期限&#160;&#160;还款方式 </string>
+    <string name="index_str8">门槛低</string>
+    <string name="index_str9">高收益</string>
+    <string name="index_str10">100元起投&#160;&#160;最高15%年化收益率</string>
+    <string name="index_str11">安全保障</string>
+    <string name="index_str12">理财无忧</string>
+    <string name="index_str13">第三方担保公司保息</string>
+    <string name="index_str14">散标</string>
+    <string name="index_str15">个人小额度贷款</string>
+    <string name="index_str16">定投宝</string>
+    <string name="index_str17">短期定投理财</string>
+    <string name="index_str18">企业直投</string>
+    <string name="index_str19">企业抵押贷款</string>
+    <string name="index_str20">债权转让</string>
+    <string name="index_str21">提前收回资本</string>
+    <string name="zh_mmm0">托管信息</string>
+    <string name="zh_mmm">绑定托管</string>
+    <string name="zh_mmmsq">投标授权</string>
+    <string name="zh_mmmsq2">还款授权</string>
+    <string name="register_tips2">&#160;&#160;&#160;&#160;推荐人:</string>
+    <string name="register_tips3">请输入推荐人(可选)</string>
+    <string name="add_bankcard_tip">温馨提示：为确保您的资金划转安全高效，建议您完善开户行信息。请您务必填写开户城市的银行支行。</string>
+
+
+    <!--易宝支付字段-->
+
+    <string name="yb_register">绑定易宝支付</string>
+    <string name="yb_charge">易宝充值</string>
+    <string name="yb_withDraw">易宝提现</string>
+
+    <string name="auto_state">
+       温馨提示：\n     
+     自动投标设置规则说明:\n
+   &#160;&#160;1、单笔借出金额最小投资金额为50元，最大投资金额必须大于或等于200元。\n
+   &#160;&#160;2、设置的自动投标金额小于等于可用金额-账户保留金额，否则不能自动投标。\n
+     自动投标排序规则说明：\n
+   &#160;&#160;1、 投标顺序按照开启自动投标功能的时间先后进行排序。\n
+   &#160;&#160;2、每个会员每个借款仅自动投标一次，投标成功后，排到所有自动投标会员的末尾。\n
+   &#160;&#160;3、中间对自动投标进行修改的，排名不变。\n
+   &#160;&#160;4、新开启自动投标用户，自动排到所有自动投标会员的末尾。\n
+   &#160;&#160;5、当账户余额不足时，系统按顺序进行，但不投标，依次转移到下一个自动投标。\n
+    </string>
+    
+    <string name="add_bankcard_info">
+       温馨提示：\n     
+      为确保您的资金划转安全高效，建议您完善开户行信息。\n
+      请您务必填写开户城市的银行支行,如：工商银行北京苏州街支行。\n
+    </string>
+    
+   <string name="tixian_info" formatted="false">
+        温馨提示：\n
+   1.提现手续费收取说明及提现金额的先后顺序：\n
+   &#160;&#160; a. 提现金额在回款总金额内，每笔收取0.1%作为手续费（最低不少于2元，最高不超过100元）。\n
+   &#160;&#160; b. 提现金额超出回款资金总额，每笔收取0.5%作为手续费（最低不少于2元，最高不超过10000元）。\n
+   &#160;&#160; c. 提现手续费计算公式：手续费 = 回款金额 x 回款手续费 + 超出回款金额 x 超出回款金额手续费。\n
+   2.为了您的资金安全，请确保提现银行账号的姓名和您进行实名验证的姓名一致。\n
+   3.提现过程遇到问题，请联系客服。
+   
+   </string>
+   <string name="tixian_info_zft" formatted="false">
+     温馨提示：\n
+       1.  将用户的账户余额提现至绑定的银行卡，会收取一定的提现手续费。\n
+       2.  默认提现：手续费为提现金额的0.2%；加急提现：为提现金额的0.5%；每笔手续费不足2元按2元收取。\n
+       3.  用户当天充值的钱，不计入可提现金额，需要等待第二天才可以提现。\n
+       4.  即时到账节假日和国家法定假日不可用，正常工作日将在2小时内转账至您的提现银行卡账户。\n
+       5.  为了您的资金安全，请确保提现银行账号的姓名和您进行实名验证的姓名一致。\n
+       6.  提现过程遇到问题，请联系客服。
+
+   </string>
+
+   
+   <string name="zq_info">
+       温馨提示：\n     
+   1.  发起债权转让将放弃本期及以后各期利息，同时从成交之日起，此债权权责由受让人承担；\n 
+   2.  转让人通过折让金设置转让价格，只可以打折，手续费为成交份额的0.5%；\n 
+   3.  所有产品可多次转让；\n 
+   4.  还款日前5天不可以转让债权；\n 
+   5.  债权一次性转让，转让份额（剩余本金部分）/认购份额最低10元，按整数倍递增；\n 
+   6.  转让有效期为提出申请起5个自然日，有效期内被认购的部分即时成交，债权在未有人购买时可随时取消；\n 
+   7.  逾期的借款标不可以转让；\n 
+   8.  债权未完成转让的，超过转让期的，剩余债权归转让人所有；\n 
+   9.  折让金定价区间：负的本债权转让份额未收的利息小于等于 折让金小于等于本债权转让份额已收到的利息；\n 
+   10.  若不设置折让金，则系统默认上次付息日到申请日的利息归转让人所有；\n 
+   11.  债权转让如果已经有承接人，则不能撤销转让；\n 
+   12.  债权转让过程中遇到问题，请联系客服。\n 
+   
+   </string>
+   
+   <string name="shuhui_info">
+      2015年07月10号后，可随时一次性或部分赎回本息部分赎回后剩余金额不得小于50元2015-07-29号 还本付息
+   </string>
+
+    <array name="person_info_sr_arrat">
+
+        <item>1000元以下</item>
+        <item>1001-2000元</item>
+        <item>2000-5000元</item>
+        <item>5000-10000元</item>
+        <item>10000-20000元</item>
+        <item>20000-50000元</item>
+        <item>50000元以上</item>
+
+
+    </array>
+
+    <string name="tab_index_str">首页</string>
+    <string name="tab_invest_str">投资</string>
+    <string name="tab_lend_str">借款</string>
+    <string name="tab_account_str">账户</string>
+    <string name="tab_more_str">设置</string>
+
+
+    <array name="person_info_xl_arrat">
+
+        <item>高中或以下</item>
+        <item>大专</item>
+        <item>本科</item>
+        <item>研究生或以上</item>
+
+
+    </array>
+
+    <string name="loan_manage_je">金额</string>
+    <string name="loan_manage_ll">利率</string>
+    <string name="loan_manage_qx">期限</string>
+    <string name="loan_manage_sj">时间</string>
+
+    <string name="loan_manage_je1">金额</string>
+    <string name="loan_manage_ll1">利率</string>
+    <string name="loan_manage_qx1">期限</string>
+    <string name="loan_manage_sj1">时间</string>
+
+    <string name="loan_manage_bm">借款标名称</string>
+
+    <string name="repayment_way">还款方式：按月份起还款</string>
+
+
+    <string name="prompt">提示!</string>
+    <string name="callphone">确定拨打此电话吗？</string>
+    <string name="friendly">友情提示!</string>
+    <string name="exit_app">你确定要退出应用吗?</string>
+    <string name="confirm">确定</string>
+    <string name="dismiss">隐藏</string>
+    <string name="back">取消</string>
+    <string name="xgsjhm">修改手机号码</string>
+
+    <string name="tg_info">托管信息</string>
+    <string name="zft_kh">开户名称</string>
+    <string name="zft_jyje">交易金额</string>
+    <string name="zft_yh">银行</string>
+    <string name="zft_ylsjg">预留手机号</string>
+    <string name="zft_ysjyzm">手机验证码</string>
+    <string name="zft_qrcz">确认充值</string>
+    <string name="zft_info">温馨提示：每笔交易金额大于1元。为确保您的资金划转安全,建议您正确填写信息</string>
+    <string name="zft_zfmm">请输入支付密码</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+     
+      <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:layout_marginTop="0.5dp">
+           
+            <TextView
+                android:id="@+id/tv"
+                 style="@style/white18Text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginLeft="5dp"
+                 android:layout_marginTop="5dp"
+                 android:text="+200"
+                 android:gravity="center"
+                 android:background="@drawable/reward_kuang"
+                 android:layout_centerVertical="true" />
+         
+            <LinearLayout
+                    android:id="@+id/index_lay2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/tv" > 
+                 <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/rewardtzjf_type" />
+
+                    <TextView
+                        android:id="@+id/tv_rewardtzjf_type"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/load"/>
+
+
+                </LinearLayout>
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/rewardtzjf_time" />
+
+                    <TextView
+                        android:id="@+id/tv_rewardtzjf_time"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/load"/>
+
+
+                </LinearLayout>
+          <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                         android:text="@string/rewardtzjf_detail" />
+
+                    <TextView
+                        android:id="@+id/tv_rewardtzjf_detail"
+                        style="@style/black13Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/load"/>
+
+
+                </LinearLayout>
+          </LinearLayout>
+
+   </RelativeLayout>
+       
+
+</LinearLayout>

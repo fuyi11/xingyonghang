@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_back">
+
+   	<RelativeLayout 
+   	    android:id="@+id/wait_layout"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="50dp"
+   	    android:background="@drawable/imq_base_bg">
+   	    
+   	    <ImageView 
+   	        android:id="@+id/mdd_logo"
+   	        android:layout_width="40dp"
+   	        android:layout_height="40dp"
+   	        android:layout_centerVertical="true"
+   	        android:layout_marginLeft="10dp"
+   	        android:src="@drawable/mdd_logo"/>
+   	    
+   	    
+   	    <TextView 
+   	        android:id="@+id/wait_text"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        style="@style/mdd_text"
+   	        android:layout_toRightOf="@id/mdd_logo"
+   	        android:layout_centerVertical="true"
+   	        android:layout_marginLeft="10dp"/>
+   	    
+   	    <ImageView 
+   	        android:id="@+id/wait_image"
+   	        android:layout_width="40dp"
+   	        android:layout_height="40dp"
+   	        android:layout_alignParentRight="true"
+   	        android:layout_marginRight="10dp"
+   	        android:layout_centerVertical="true"/>   	    
+   	</RelativeLayout>
+
+</RelativeLayout>

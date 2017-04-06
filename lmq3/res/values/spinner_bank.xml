@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- 选择银行 -->
+   <string name="sp_chosebank_title">您当前的银行名称</string>
+   <string-array name="sp_chosebank_list">
+        <item>招商银行</item>
+        <item>中国银行</item>
+        <item>中国工商银行</item>
+        <item>中国建设银行</item>
+        <item>中国农业银行</item>
+        <item>交通银行</item>
+        <item>上海蒲东发展银行</item>
+        <item>深圳发展银行</item>
+        <item>中国民生银行</item>
+        <item>兴业银行</item>
+        <item>北京银行</item>
+        <item>天津银行</item>
+        <item>上海银行</item>
+        <item>华夏银行</item>
+        <item>光大银行</item>
+        <item>广发银行</item>
+        <item>中信银行</item>
+        <item>上海农商银行</item>
+   </string-array> 
+</resources>

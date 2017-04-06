@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:epay="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@drawable/input" >
+
+    <TextView 
+        android:id="@+id/mdd_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        style="@style/mdd_text"/>
+    
+    <com.money.more.view.SlideButton 
+        android:id="@+id/mdd_slide"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+	    epay:status="false"
+	    android:layout_centerVertical="true"
+	    android:layout_marginRight="5dp"
+	    android:layout_alignParentRight="true"/>
+</RelativeLayout>

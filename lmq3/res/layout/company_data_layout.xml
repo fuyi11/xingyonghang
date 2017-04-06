@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back" >
+    
+    <include layout="@layout/page_head"/>
+    
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:text="完善企业信息有助于加快您的借款速度"
+	    style="@style/black13Text"
+	    android:singleLine="true"
+		android:textColor="#808080"
+		android:layout_marginLeft="15dp"
+	    android:layout_gravity="left"/>
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:background="@color/white"
+	    android:padding="10dp"
+        android:id="@+id/company_info">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="企业资料"
+	        style="@style/black18Text"
+			android:textColor="@color/new_black_color"
+	        android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/company_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/gray16Text"
+            android:text="@string/load"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/p_jt"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="20dp"/>
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="0.5dp"
+	    android:background="@color/white"
+	    android:padding="10dp"
+        android:id="@+id/uload_company">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="资料上传"
+	        style="@style/black18Text"
+			android:textColor="@color/new_black_color"
+	        android:layout_centerVertical="true" />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/p_jt"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="20dp"/>
+	</RelativeLayout>
+</LinearLayout>

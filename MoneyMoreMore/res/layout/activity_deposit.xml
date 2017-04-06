@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdd_main_back" >
+
+    <include
+        android:id="@+id/deposit_title"
+        layout="@layout/base_title" />
+
+    <ScrollView
+        android:id="@+id/account_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deposit_title"
+        android:layout_marginBottom="10dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/withdraw_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/account_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/title_back"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/platform_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/account_username"
+                    android:textColor="@color/recharge_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/platform_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/recharge_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mdd_widthdraw_mainlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_icon_main_item"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/account_user"
+                    layout="@layout/mdd_base_textitem" />
+
+                <TextView
+                    android:id="@+id/line_1"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/account_bank"
+                    layout="@layout/mdd_base_textitem" />
+
+                <TextView
+                    android:id="@+id/line_2"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/account_cardno"
+                    layout="@layout/mdd_base_textitem" />
+
+                <TextView
+                    android:id="@+id/line_3"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/account_amount"
+                    layout="@layout/mdd_base_textitem" />
+
+                <TextView
+                    android:id="@+id/line_4"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/account_fee"
+                    layout="@layout/mdd_base_textitem" />
+
+                <TextView
+                    android:id="@+id/line_5"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/account_reallaccount"
+                    layout="@layout/mdd_base_textitem" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/pay_psd_layout"
+                layout="@layout/item_recharge_edit" />
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/EnterBtnTheme"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/deposit_submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

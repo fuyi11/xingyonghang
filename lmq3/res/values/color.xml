@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent_background">#80000000</color>
+    <color name="red">#ff0000</color>
+    <color name="yellow">#f76b47</color>
+    <color name="person_red">#fc4949</color>
+    <color name="white">#ffffff</color>
+    <color name="text_color">#3099FF</color>
+    <color name="black">#000000</color>
+    <color name="black2">#C8C7CC</color>
+    <color name="blue">#1883E3</color>
+    <color name="line">#d3dede</color>
+    <color name="gold">#FFA900</color>
+    <color name="back">#e7e7e8</color>
+    <color name="gray">#696969</color>
+    <color name="orange">#ff870f</color>
+    <color name="transparent">#00000000</color>
+    <color name="normal">#F0EFF5</color>
+    <color name="click">#404040</color>
+    <color name="gesture_background">#ff303237</color>
+    <color name="color_hei_8">#00000000</color>
+    <color name="title_color">#fa4343</color>
+    <color name="title_color2">#FFFFFF</color>
+    <color name="tz_title_color">#FF8247</color>
+    <color name="title_black">#333333</color>
+    <color name="view_bg_color">#f0eff4</color>
+    <color name="index_2_1_color">#1C96D4</color>
+    <color name="index_2_2_color">#7FC369</color>
+    <color name="index_2_3_color">#FEB500</color>
+    <color name="green">#228B22</color>
+    <color name="new_black_color">#333333</color>
+    <color name="new_black_color_1">#666666</color>
+    <color name="new_gray_color">#999999</color>
+    <color name="RoundProgressBar">#fb9e65</color>
+    <color name="RoundProgressBarback">#cccccc</color>
+    
+    <drawable name="trans">@color/color_hei_8</drawable>
+    <color name="tab_color">#8d8d8d</color>
+    <color name="tab_color2">#d6d6d6</color>
+
+    <color name="RoundProgressBarback_2">#585252</color>
+    <color name="tz_red">#e25453</color>
+    <color name="tajax_invest_color">#fe6e44</color>
+    <color name="index_kuang_red">#f76c6b</color>
+    <color name="index_rate_red">#ed3230</color>
+    
+    <color name="index_detail_red">#FC4949</color> 
+    <color name="RoundProgressBar_new">#BC0707</color>
+
+
+
+
+    <color name="btntextcolor">#ff1E90FF</color><!--dialog中按钮字体颜色 -->
+</resources>

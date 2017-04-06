@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/p_back5" >
+
+    <ImageButton
+        android:id="@+id/fx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dip"
+        android:background="@drawable/button_b_tz_fx" />
+    
+     <ImageButton
+        android:id="@+id/js"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/fx" 
+        android:layout_marginLeft="30dip"
+        android:background="@drawable/jtjs" />
+
+    <Button
+        android:id="@+id/enter"
+        style="@style/white13Text"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/new_btn_shape"
+        android:text="@string/tz_item_9" />
+
+</RelativeLayout>

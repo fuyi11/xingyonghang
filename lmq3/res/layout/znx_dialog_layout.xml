@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/layout_layer"
+    >
+
+
+  <RelativeLayout 
+    android:layout_width="match_parent"
+    android:background="@color/title_color"
+    android:layout_height="45dp">
+
+    <Button
+        android:id="@+id/dialog_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/b_to_left_2"
+        />
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="系统通知"
+        />
+    
+    <Button
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:id="@+id/dialog_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:text="确定"
+        android:visibility="gone"
+        android:background="@null"
+        />
+
+  </RelativeLayout> 
+
+
+       <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试：亲爱的用户,如不是自己操作,请尽快联系客服"
+            style="@style/black18Text"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            />
+
+
+
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/page_head"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center">
+
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="转让金额："
+                    />
+
+                <TextView
+                    android:id="@+id/zr_je"
+
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/zr_un"
+                    android:gravity="center_vertical"
+                    android:text="100"
+                    />
+
+                <TextView
+                    android:id="@+id/zr_un"
+                    style="@style/black13Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/zr_je"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="元"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/back"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center">
+
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="手续费："
+                    />
+
+                <TextView
+                    android:id="@+id/zr_sxf"
+
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/zr_nu2"
+                    android:gravity="center_vertical"
+                    android:text="100"
+                    android:textColor="@color/green"
+                    />
+
+                <TextView
+                    android:id="@+id/zr_nu2"
+                    style="@style/black13Text"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/zr_sxf"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="元"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/back"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center">
+
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="预期到账金额："
+                    />
+
+                <TextView
+                    android:id="@+id/zr_yqdzje"
+
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/zr_un3"
+                    android:gravity="center_vertical"
+                    android:text="100"
+                    android:textColor="@color/red"
+                    />
+
+                <TextView
+                    android:id="@+id/zr_un3"
+                    style="@style/black13Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/zr_yqdzje"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="元"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/back"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="折让利："
+                    />
+
+                <TextView
+                    android:id="@+id/zr_zrl"
+                    style="@style/black16Text"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/lv_input"
+                    android:text="折让率0%-7.5%"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/lv_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+
+                    <EditText
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/zrl_input"
+                        android:inputType="numberDecimal"
+                        android:layout_width="120dp"
+                        android:hint="0.00"
+                        android:gravity="right"
+                        android:background="@drawable/new_edt_shape"
+                        android:layout_height="wrap_content"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/back"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_pay_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center">
+
+
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="支付密码："
+                    />
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/zr_pwd"
+                    android:layout_width="120dp"
+                    android:background="@drawable/new_edt_shape"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/back"/>
+
+            <Button
+                android:id="@+id/zr_action"
+                style="@style/white20Text"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/new_btn_shape"
+                android:text="立即转让"
+                android:textColor="@color/white" />
+            
+            <TextView
+                style="@style/black10Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/zq_info" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

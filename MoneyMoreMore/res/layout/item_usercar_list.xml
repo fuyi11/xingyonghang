@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="10dip"
+    android:minHeight="10dip"
+    android:background="@drawable/auth_context">
+    
+    
+	<TextView 
+	    android:id="@+id/bank_name"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:textSize="18sp"
+	    android:gravity="center_vertical"
+	    android:layout_alignParentLeft="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="5dip"
+	    android:text="中国建设银行储蓄卡(尾号1458)"/>
+	
+	<ImageView 
+	    android:id="@+id/choose"
+	    android:layout_width="35dip"
+	    android:layout_height="28dip"
+	    android:src="@drawable/choose"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dip"
+	    android:layout_centerVertical="true"
+	    android:visibility="gone"/>
+    
+</RelativeLayout>

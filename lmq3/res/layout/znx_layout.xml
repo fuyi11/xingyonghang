@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff4"
+    android:orientation="vertical" >
+    
+      <include layout="@layout/page_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <RadioButton
+                style="@style/menu_bar"
+                android:background="@drawable/button_ment_left"
+                android:id="@+id/qb"
+                android:text="全部"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/yd"
+                style="@style/menu_bar"
+                android:layout_weight="1"
+                android:background="@drawable/button_ment_middle"
+                android:text="已读" />
+
+            <RadioButton
+                android:id="@+id/wd"
+                style="@style/menu_bar"
+                android:layout_weight="1"
+                android:background="@drawable/button_ment_right"
+                android:text="未读" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <!-- 分割线 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/back" />
+
+        
+    </LinearLayout>
+
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/znx_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:cacheColorHint="#00000000" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

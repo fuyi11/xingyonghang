@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+        
+        <include layout="@layout/page_head"/>
+        
+           <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edsq_money"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:id="@+id/ed_money"
+                    style="@style/black16Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_name"
+                    android:layout_marginLeft="10dp"
+                    android:padding="8dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/new_edt_shape">
+                </EditText>
+            </RelativeLayout>
+           
+       
+            <TextView
+                style="@style/black18Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="申请说明" />
+
+            <EditText
+                android:id="@+id/other_application"
+                style="@style/gray16Text"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/new_edt_shape"
+                android:inputType="textMultiLine"
+                android:maxLines="8"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="left|top" />
+
+          <Button
+              android:id="@+id/btn_sure"
+              style="@style/white20Text"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:padding="10dp"
+              android:background="@drawable/new_btn_shape"
+              android:text="@string/edsq" />
+
+</LinearLayout>

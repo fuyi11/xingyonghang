@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/swith_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/normal_btn"
+            style="@style/black13Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="散标" />
+
+        <Button
+            android:id="@+id/normal2_btn"
+            style="@style/black13Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="定投宝" />
+
+        <Button
+            android:id="@+id/normal3_btn"
+            style="@style/black13Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="企业直投" />
+
+        <Button
+            android:id="@+id/normal4_btn"
+            style="@style/black13Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="债权转让" />
+    </LinearLayout>
+
+    <com.lmq.view.MyListView
+        android:id="@+id/listview"
+        android:layout_below="@+id/swith_head"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="1dip"
+        android:cacheColorHint="#00000000" >
+    </com.lmq.view.MyListView>
+
+</RelativeLayout>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@color/title_color"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_b_to_left" />
+
+
+        <com.lmq.view.DrawableCenterButton
+            android:id="@+id/title"
+            style="@style/white20Text"
+            android:textSize="24sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/title_color"
+
+            android:text="普通标"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wite_arrow_down"
+            android:layout_toRightOf="@id/title"
+            android:layout_centerVertical="true"
+            android:id="@+id/triangle" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <RelativeLayout
+                    android:id="@+id/finger_pwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.5dp"
+                    android:background="@drawable/button_p_kuang4"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/black13Text"
+                        android:layout_centerVertical="true"
+                        android:text="同时满足以下条件，将自动投标"
+                        android:textColor="@color/title_black" />
+
+                    <ToggleButton
+                        android:id="@+id/is_use_auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/torggle_bg"
+                        android:checked="true"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:textColor="#ffffff"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black13Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="最大投资金额" />
+
+                <EditText
+                    android:id="@+id/invest_money"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="4"
+                    android:background="@drawable/new_edt_shape" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black13Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="最小投资金额" />
+
+                <EditText
+                    android:id="@+id/min_invest"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/new_edt_shape" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                
+                <CheckBox
+                    android:button="@null"
+                    android:id="@+id/check_box_rate"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/person_info_auto_selector"
+                   />
+
+                <TextView
+                    style="@style/black13Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:text="年利率" />
+                <TextView
+                    style="@style/black16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text=">=" />
+
+                <EditText
+                    android:id="@+id/interest_rate"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:hint="%"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/new_edt_shape" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                
+                <CheckBox
+
+                    android:button="@null"
+                    android:id="@+id/check_box_date"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/person_info_auto_selector"
+                     />
+
+                <TextView
+                    style="@style/black13Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:text="借款期限" />
+
+                <EditText
+                    android:id="@+id/duration_from"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/new_edt_shape" />
+                   <TextView
+                    style="@style/black13Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="个月到" />
+                <EditText
+                    android:id="@+id/duration_to"
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/new_edt_shape" />
+                <TextView
+                    style="@style/black13Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="个月" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                
+                <CheckBox
+                    android:button="@null"
+                    android:id="@+id/check_box_tianbiao"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/person_info_auto_selector"
+                   />
+
+                <TextView
+                    style="@style/black13Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:text="包含天标" />
+
+                
+            </LinearLayout>
+            
+      <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+          <CheckBox
+              android:button="@null"
+              android:id="@+id/check_box_account"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:background="@drawable/person_info_auto_selector"
+              />
+                <TextView
+                    style="@style/black13Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:text="账户保留金额" />
+          <TextView
+              style="@style/black16Text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="10dp"
+              android:text=">=" />
+
+                <EditText
+                    android:id="@+id/account_money"
+
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.6"
+                    android:hint="元"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/new_edt_shape" />
+            </LinearLayout>
+            
+      <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.5dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+                
+                <CheckBox
+                    android:button="@null"
+                    android:id="@+id/check_box_cancledate"
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/person_info_auto_selector"
+
+                    />
+
+          <LinearLayout
+              android:id="@+id/end_time_btn"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+
+              <TextView
+                  style="@style/black13Text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:layout_marginLeft="5dp"
+                  android:text="自动投标日期设置于" />
+
+              <TextView
+                  android:id="@+id/end_time"
+                  android:layout_width="5dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="2"
+                  android:maxLines="1"
+                  android:singleLine="true"
+                  android:inputType="numberDecimal"
+                  android:gravity="right"
+                  android:background="@drawable/new_edt_shape" />
+              <TextView
+                  style="@style/black13Text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:text="自动取消" />
+
+          </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/white16Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/person_info_btn_selector"
+                android:text="@string/ok" />
+            
+             <TextView
+
+                    style="@style/black10Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/auto_state" />
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

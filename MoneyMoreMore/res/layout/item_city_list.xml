@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical">
+
+    <TextView 
+        android:id="@+id/city_name"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        style="@style/mdd_text"
+        android:textColor="@color/black"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="10dp"/>
+
+</LinearLayout>

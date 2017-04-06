@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdd_main_back" >
+
+    <include
+        android:id="@+id/register_first_title"
+        layout="@layout/base_title" />
+
+    <ScrollView
+        android:id="@+id/my_scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_first_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/register_relative_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/title_back"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/user_info_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/register_name"
+                        android:textColor="@color/recharge_text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/recharge_text"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/idcard_info_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/id_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/id_card"
+                        android:textColor="@color/recharge_text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/id_card_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/recharge_text"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/platform_info_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/register_mdd_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/platform"
+                        android:textColor="@color/recharge_text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/register_mdd_name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/recharge_text"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/register_linear_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dip"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/login_title_layout"
+                    layout="@layout/item_msgtitle" />
+
+                <include
+                    android:id="@+id/login_psd_layout"
+                    layout="@layout/item_main_area" />
+
+                <TextView
+                    android:id="@+id/tv_space"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp" />
+
+                <include
+                    android:id="@+id/pay_title_layout"
+                    layout="@layout/item_msgtitle" />
+
+                <include
+                    android:id="@+id/pay_psd_layout"
+                    layout="@layout/item_main_area" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/question_layout"
+                layout="@layout/item_side" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                style="@style/EnterBtnTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginTop="20dp"
+                android:text="@string/mdd_next" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/page_head" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/white20Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/zh_mmm0" />
+    </RelativeLayout>
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+  
+            android:layout_marginTop="5dp"
+            android:background="@color/back"
+            android:orientation="vertical" >
+            
+            <RelativeLayout
+                android:id="@+id/rl_mmm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dip" 
+                android:background="@drawable/button_p_kuang4"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black20Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zh_mmm"
+                    android:textColor="@color/new_black_color" />
+
+                <TextView
+                    android:id="@+id/tv_mmm"
+                    style="@style/gray16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/bt_v22"
+                    android:paddingRight="10dp"
+                    android:text="@string/load" />
+
+                <Button
+                    android:id="@+id/bt_v22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/p_jt" />
+            </RelativeLayout>
+            
+			<RelativeLayout
+                android:id="@+id/rl_mmmsq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dip" 
+                android:background="@drawable/button_p_kuang4"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black20Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zh_mmmsq"
+                    android:textColor="@color/new_black_color" />
+ <TextView
+                    android:id="@+id/tv_mmmsq"
+                    style="@style/gray16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/bt_v222"
+                    android:paddingRight="10dp"
+                    android:text="@string/load" />
+
+                <Button
+                    android:id="@+id/bt_v222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/p_jt" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_mmmsq2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dip" 
+                android:background="@drawable/button_p_kuang4"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/black20Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zh_mmmsq2"
+                    android:textColor="@color/new_black_color" />
+ 
+<TextView
+                    android:id="@+id/tv_mmmsq2"
+                    style="@style/gray16Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/bt_v"
+                    android:paddingRight="10dp"
+                    android:text="@string/load" />
+                <Button
+                    android:id="@+id/bt_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/p_jt" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dip" >
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/black18Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/dilalog_one_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="债权总额：" />
+
+        <Button
+            android:id="@+id/ze"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="10dp" />
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dilalog_two_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买价格：" />
+
+        <Button
+            android:id="@+id/jg"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="10dp" />
+           <EditText
+            android:visibility="gone"
+            android:id="@+id/jg2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="10dp" />
+        
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dilalog_three_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前余额：" />
+
+        <Button
+            android:id="@+id/ye"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="10dp" />
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="元" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/lv_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/zq_pwd" />
+
+        <EditText
+            android:id="@+id/zq_item_pin"
+            style="@style/black18Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:focusable="true"
+            android:inputType="textPassword" />
+
+     
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:visibility="gone"
+            android:id="@+id/cancle"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/update_exit_btn"
+            android:textColor="@color/black"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/gm"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/new_btn_shape"
+            android:text="确认购买" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

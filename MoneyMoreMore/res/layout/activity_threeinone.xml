@@ -1,0 +1,525 @@
+<!-- 三合一界面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mdd_main_back" >
+
+    <include
+        android:id="@+id/three_title"
+        layout="@layout/base_title" />
+
+    <LinearLayout
+        android:id="@+id/wait_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/three_title"
+        android:background="@color/huise"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/wait_text"
+            style="@style/title_text_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/three_wait_text" />
+
+        <ImageView
+            android:id="@+id/wait_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wait_layout"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/recharge_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/choose_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bind_quick_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bind_quick_on"
+                    android:text="@string/bind_quick"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bind_remit_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bind_remit"
+                    android:text="@string/bind_remit"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="126dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/title_back"
+                android:orientation="vertical" >
+
+                <!-- 运营公司名称 -->
+
+                <RelativeLayout
+                    android:id="@+id/company_name_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/company_name_text"
+                        style="@style/title_text_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/company_name" />
+
+                    <TextView
+                        android:id="@+id/company_name"
+                        style="@style/title_text_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/company_name" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/line_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:src="@drawable/line" />
+
+                <!-- 平台名称 -->
+
+                <RelativeLayout
+                    android:id="@+id/platform_name_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/platform_name_text"
+                        style="@style/title_text_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/platform_name" />
+
+                    <TextView
+                        android:id="@+id/platform_name"
+                        style="@style/title_text_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/platform_name" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/line_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:src="@drawable/line" />
+
+                <!-- 平台用户名 -->
+
+                <RelativeLayout
+                    android:id="@+id/platform_account_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/platform_account_text"
+                        style="@style/title_text_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/platform_user_name" />
+
+                    <TextView
+                        android:id="@+id/platform_account"
+                        style="@style/title_text_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/platform_name" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/line_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:src="@drawable/line" />
+
+                <!-- 乾多多用户名 -->
+
+                <RelativeLayout
+                    android:id="@+id/mdd_account_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/mdd_account_text"
+                        style="@style/title_text_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/mdd_account_name" />
+
+                    <TextView
+                        android:id="@+id/mdd_account"
+                        style="@style/title_text_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/company_name" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/explain_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/explain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/explain"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/explain_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/remit_explain"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/remit_text"
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/user_maininfo_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="81dp"
+                android:background="@drawable/item_main160"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/username"
+                    layout="@layout/mdd_base_textitem" />
+
+                <TextView
+                    android:id="@+id/line_4"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/idcard"
+                    layout="@layout/mdd_base_textitem" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/enter_bind_card"
+                layout="@layout/item_recharge_text"
+                android:visibility="gone" />
+
+            <!-- 银行卡号类型 -->
+
+            <LinearLayout
+                android:id="@+id/card_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_main160"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/band_card_type_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bank_type"
+                        style="@style/recharge_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:paddingLeft="10dip"
+                        android:text="@string/bank_type"
+                        android:textSize="15sp" />
+
+                    <Spinner
+                        android:id="@+id/bank_type_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/line_5"
+                    style="@style/item_line" />
+
+                <LinearLayout
+                    android:id="@+id/bank_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bank"
+                        style="@style/recharge_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:paddingLeft="10dip"
+                        android:text="@string/bank"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/bank_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/white"
+                        android:gravity="left|center_vertical"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/bank_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center|right"
+                        android:background="@drawable/next_btn" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 选择省市 -->
+
+            <LinearLayout
+                android:id="@+id/bank_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_main160"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/city_realitive_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp" >
+
+                    <TextView
+                        android:id="@+id/city_info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/province"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/city_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/city_info_text"
+                        android:gravity="center_vertical"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/city_linear_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/city_info_text"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:id="@+id/pro_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <Spinner
+                                android:id="@+id/province_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dip"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:background="@null" />
+
+                            <ImageView
+                                android:id="@+id/pro_selecter"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:src="@drawable/city_seleter" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/city_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <Spinner
+                                android:id="@+id/city_spinner"
+                                android:layout_width="fill_parent"
+                                android:layout_height="35dip"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="25dp"
+                                android:background="@null" />
+
+                            <ImageView
+                                android:id="@+id/city_selecter"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:src="@drawable/city_seleter" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/line_7"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/branchbankname"
+                    layout="@layout/mdd_base_edititem"/>
+            </LinearLayout>
+
+            <!-- 支行名称，flag为2显示 -->
+
+            <LinearLayout
+                android:id="@+id/main_card_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_main160"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/cardno"
+                    layout="@layout/mdd_base_edititem" />
+
+                <TextView
+                    android:id="@+id/line_8"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/mobile"
+                    layout="@layout/mdd_base_edititem" />
+
+                <TextView
+                    android:id="@+id/line_9"
+                    style="@style/item_line"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/amount"
+                    layout="@layout/mdd_base_edititem"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/line_10"
+                    style="@style/item_line" />
+
+                <include
+                    android:id="@+id/message"
+                    layout="@layout/mdd_base_codeitem" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/recharge_submit"
+                style="@style/EnterBtnTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dip"
+                android:text="@string/threeinone_submit" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

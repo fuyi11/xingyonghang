@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <!-- 债权总额 -->
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/zq_all_moeny" />
+
+        <TextView
+            android:id="@+id/zq_item_money"
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/p_back5"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <!-- 债权总额 -->
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/zq_buy_price" />
+
+        <TextView
+            android:id="@+id/zq_item_price"
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/p_back5"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <!-- 债权总额 -->
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/zq_left_money" />
+
+        <TextView
+            android:id="@+id/zq_item_left"
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/p_back5"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <!-- 债权总额 -->
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/zq_pwd" />
+
+        <EditText
+            android:id="@+id/zq_item_pin"
+            style="@style/black18Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/p_back5"
+            android:focusable="true"
+            android:inputType="textPassword" />
+
+        <TextView
+            style="@style/black18Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="    " />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/zq_submit_btn"
+        style="@style/white20Text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/new_btn_shape"
+        android:gravity="center"
+        android:text="@string/zq_buy_btn_str" />
+
+</LinearLayout>
